@@ -1,0 +1,838 @@
+.switch{
+/*	clear: both;*/
+	height: 26px;
+	background: #fff;
+	margin-top: 10px;
+	position: relative;
+	z-index: 123;
+}
+.switch a{
+	border: 1px solid #dbdbdb;
+	float: left;
+	padding-left: 12px;
+	padding-right: 12px;
+	height: 26px;
+	line-height: 26px;
+	background: #f5f5f5;
+	color: #333333;
+	font-size: 12px;
+}
+.switch a::after{
+	width: 10px;
+	height: 10px;
+	background: url(../images/delete.png) no-repeat;
+	display: inline-block;
+	margin-left: 6px;
+	content: "";
+}
+.switch a.light{
+	background:#f5f5f5;
+	color: #0182e5;
+	border-bottom:none;
+}
+.switch a.light::after{
+	background: url(../images/deletelight.png) no-repeat;
+}
+/*.wrapup{
+	margin-top: -1px;
+	width: 96%;
+	padding-top: 30px;
+	background: #f5f5f5;
+	height:90%;
+	position: relative;
+	border: 1px solid #dbdbdb;
+	padding-left: 20px;
+	padding-right: 20px;
+}*/
+.inputbox{
+	padding-top: 20px;
+/*	padding-left: 20px;*/
+/*	overflow: hidden;*/
+	background: #f5f5f5;
+}
+.inputbox > div{
+	width: 290px;
+	float: left;
+}
+.inputbox > div span{
+	float: left;
+	margin-right: 10px;
+	width: 70px;
+	height: 28px;
+	text-align: right;
+	line-height: 28px;
+	color: #333333;
+	font-size: 12px;
+}
+.inputbox > div input,.inputbox > div div{
+	width: 198px;
+	height: 26px;
+	float: left;
+	border:1px solid #dbdbdb;
+	color: #000;
+	font-size: 12px;
+	text-indent: 2px;
+	background: #fff;
+	    -webkit-appearance:;
+}
+.inputbox div input.light{
+	border-color: #7bc6ff;
+}
+
+.inputbox > div div.select{
+	position: relative;
+	cursor: pointer;
+	text-indent: 0;
+}
+.inputbox > div div.select select{
+	width: 100%;
+/*	text-indent:9px;*/
+	height: 26px;
+	border:none;
+	background: #FFFFFF;
+}
+.inputbox > div div.select::after{
+	width: 10px;
+	height: 5px;
+	content: "";
+	right: 10px;
+	top:10px;
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+}
+.inputbox > div div.select b{
+color: #333333;
+	line-height: 26px;
+	font-weight: inherit;
+}
+
+.inputbox > div input.query{
+	width: 70px;
+	height: 28px;
+	border: none;
+	outline: none;
+	margin-left: 20px;
+	float: left;
+	cursor: pointer;
+	background: url(../images/query.png) no-repeat;
+}
+
+.inputbox > div input.reset{
+	width: 58px;
+	height: 28px;
+	border: none;
+	outline: none;
+	margin-left: 8px;
+	cursor:pointer;
+	float: left;
+	background: url(../images/reset.png) no-repeat;
+}
+
+.inputbox > div > .b{
+	height: 28px;
+	margin-left: 10px;
+	border:none;
+	position: relative;
+	
+	background: none;
+	font-size: 12px;
+	color: #333333;
+	width: 75px;
+	float: left;
+	line-height: 28px;
+}
+
+.inputbox > div > .b::after{
+	width: 10px;
+	height: 5px;
+	content: "";
+	right:8px;
+	top:10px;
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+}
+.inputbox > div > .b:hover{
+	background: #e6e6e6;
+}
+.inputbox > div > .b:hover::after{
+	width: 10px;
+	height: 5px;
+	content: "";
+	right:8px;
+	top:10px;
+	background: url(../images/arrow2.png) no-repeat;
+	position: absolute;
+}
+
+
+.inputbox > div > .b ul{
+/*	background:#e6e6e6;*/
+	display: none;
+	position: absolute;
+	top:26px;
+	width: 98%;
+	border: 1px solid #e6e6e6;
+}
+.inputbox > div > .b:hover ul{
+	display: block
+}
+
+.inputbox > div > .b ul li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	background: #e6e6e6;
+}
+.inputbox > div > .b li:hover{
+	background: #0182e5;
+	color: #fff;
+}
+.operation{
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-left: 20px;
+	overflow: hidden;
+	background: #f5f5f5; 
+}
+.operation > div.btn {
+/*	width: 76px;*/
+	padding-left: 8px;
+	padding-right: 8px;
+	height: 22px;
+	background: #128ae7;
+}
+.operation  div.select{
+	position: relative;
+}
+.operation  div.select select{
+	width: 82px;
+	height: 22px;
+	padding-left: 10px;
+}
+.operation  div.select img{
+	position: absolute;
+	right: 5px;
+	top:8px;
+}
+.operation > div img{
+/*	margin-left:6px;	*/
+/*	margin-left:6px;*/
+	position: relative;
+	top:4px;
+}
+.operation > div{
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 22px;
+	margin-right: 10px;
+	float: left;
+}
+
+.projectlist{
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 98%;
+}
+
+.projectlist th{
+	height: 36px;
+	background: #e6e6e6;
+	color: #333333;
+	font-size: 12px;
+}
+.projectlist tr b{
+	width: 12px;
+	height:12px;
+	display: block;
+	margin-left: 8px;
+	background:url(../images/select.png) no-repeat;
+}
+
+.projectlist td{
+	height: 36px;
+	text-align: center;
+	color: #333;
+	font-size: 12px;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.projectlist td i{
+	width: 12px;
+	cursor: pointer;
+	height: 12px;
+	display:inline-block;
+}
+.projectlist td i.cancel{
+	background: url(../images/cancel.png) no-repeat;
+}
+
+.projectlist td i.delete2{
+	background: url(../images/delete2.png) no-repeat;
+}
+
+.projectlist td i.again{
+	margin-left: 10px;
+	margin-right: 10px;
+	background: url(../images/again.png) no-repeat;
+}
+.projectlist td em.yes{
+	color:#00bda6;
+}
+
+.projectlist td em.not{
+	color: #ff6a5a;
+}
+
+.projectlist th div.accredit{
+	width: 90px;
+	height: 36px;
+	margin: auto auto;
+	position: relative;
+}
+.projectlist th div.accredit h3{
+	width: 90px;
+	height: 36px;
+	line-height: 36px;
+}
+.projectlist th div.accredit ul{
+	background:#e6e6e6;
+	display: none;
+	border: 1px solid #e6e6e6;
+}
+.projectlist th div.accredit ul li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	background: #e6e6e6;
+}
+.projectlist th div.accredit ul li:hover{
+	background: #0182e5;
+	color: #fff;
+}
+.projectlist th div.accredit::after{
+	width: 10px;
+	height: 5px;
+	content: "";
+	right:8px;
+	top:15px;
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+}
+.projectlist th div.accredit:hover::after{
+	width: 10px;
+	height: 5px;
+	content: "";
+	right:8px;
+	top:15px;
+	background: url(../images/arrow2.png) no-repeat;
+	position: absolute;
+}
+
+.projectlist th div.accredit:hover ul{
+	display: block
+}
+
+.pitchon {
+	background: #e2f2ff;
+}
+
+.projectlist tr.pitchon i.cancel{
+	background: url(../images/cancelLight.png) no-repeat;
+}
+
+.projectlist tr.pitchon i.delete2{
+	background: url(../images/delete2Light.png) no-repeat;
+}
+
+.projectlist tr.pitchon i.again{
+	background: url(../images/againLight.png) no-repeat;
+}
+
+
+#paging{
+	position: absolute;
+	bottom: 20px;
+	right: 20px
+}
+
+
+.cueLayer{
+	/*width: 380px;*/
+	display: block;
+	/*height: 190px;*/
+	background: #fff;
+}
+.cueLayer > h3{
+	background: #34495e;
+	height: 40px;
+}
+.cueLayer > h3  span{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	padding-left: 16px;
+}
+.cueLayer > h3 b{
+	width: 18px;
+	float: right;
+	cursor: pointer;
+	height: 18px;
+	background: url(../images/closeleay.png) no-repeat;
+	margin-top: 9px;
+	margin-right: 10px;
+}
+.cueLayer .planList{
+	background: #fff;
+	overflow: hidden;
+}
+.cueLayer .planList .one-level{
+	cursor: pointer;
+}
+.cueLayer .planList .one-level > h3{
+	height:33px;
+	padding-left: 40px;
+	color: #333333;
+	line-height: 33px;
+	font-size: 12px;
+	position: relative;
+	border-bottom: 1px solid #ebebeb;
+	
+}
+
+.cueLayer .planList .one-level > h3::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left: 25px;
+	top:13px;
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+}
+.cueLayer .planList .one-level:hover > h3::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:25px;
+	top:13px;
+	background: url(../images/arrow2.png) no-repeat;
+	position: absolute;
+}
+.cueLayer .planList .one-level > ul{
+	
+	display: none;
+}
+.cueLayer .planList .one-level:hover > ul{
+	display: block;
+}
+
+.cueLayer .planList .one-level > ul > li{
+	padding-left:38px;
+	padding-right:38px;
+		border-bottom: 1px solid #ebebeb;
+}
+.cueLayer .planList .one-level > ul > li > h3{
+	height:30px;
+	color: #333333;
+	line-height: 30px;
+	font-size: 12px;
+	padding-left: 12px;
+	position: relative;
+}
+
+.cueLayer .planList .one-level > ul > li > h3 b{
+	float: right;
+	font-weight: inherit;
+	color: #0182e5;
+	font-size: 12px;
+}
+
+.cueLayer .planList .one-level > ul > li > h3::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:0px;
+	top:13px;
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+}
+.cueLayer .planList .one-level > ul > li:hover > h3::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:0px;
+	top:13px;
+	background: url(../images/arrow2.png) no-repeat;
+	position: absolute;
+}
+.cueLayer .planList .one-level > ul > li > ol{
+	display: none;
+}
+.cueLayer .planList .one-level > ul > li:hover >ol{
+	display: block;
+}
+
+.cueLayer .planList .one-level > ul > li > ol > li{
+	border-bottom: 1px solid #ebebeb;
+}
+.cueLayer .planList .one-level > ul > li > ol > li > h3{
+	height:30px;
+	color: #333333;
+	line-height: 30px;
+	font-size: 12px;
+	padding-left: 30px;
+	position: relative;
+}
+.cueLayer .planList .one-level > ul > li > ol > li > h3 b{
+	float: right;
+	font-weight: inherit;
+	color: #0182e5;
+	font-size: 12px;
+}
+.cueLayer .planList .one-level > ul > li > ol > li > h3::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:15px;
+	top:13px;
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+}
+.cueLayer .planList .one-level > ul > li > ol > li:hover > h3::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:15px;
+	top:13px;
+	background: url(../images/arrow2.png) no-repeat;
+	position: absolute;
+}
+
+.cueLayer .planList .one-level > ul > li > ol > li > div{
+	display: none;
+	/*display: block;*/
+	height:30px;
+	color: #333333;
+	line-height: 30px;
+	font-size: 12px;
+	padding-left: 40px;
+	border-bottom: 1px solid #ebebeb;	
+	position: relative;
+}
+.cueLayer .planList .one-level > ul > li > ol > li:hover div{
+	display: block;
+}
+.cueLayer .planList .one-level > ul > li > ol > li > div b{
+	float: right;
+	font-weight: inherit;
+	color: #0182e5;
+	font-size: 12px;
+}
+.cueLayer > a{
+	width: 70px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	background: #0182e5;
+	border-radius:5px;
+	margin:  auto auto;
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 20px;
+}
+.main-box div img{
+	margin-bottom: 11px;
+}
+.main-box .planList{
+	overflow: hidden;
+}
+.main-box .planList .one-level{
+	cursor: pointer;
+}
+.main-box .planList .one-level > h3{
+	height:33px;
+	padding-left: 40px;
+	color: #333333;
+	line-height: 33px;
+	font-size: 12px;
+	position: relative;
+	border-bottom: 1px solid #ebebeb;
+	
+}
+
+.main-box .planList .one-level > h3::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left: 25px;
+	top:13px;
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+}
+.main-box .planList .one-level:hover > h3::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:25px;
+	top:13px;
+	background: url(../images/arrow2.png) no-repeat;
+	position: absolute;
+}
+/*.cueLayer .planList .one-level > ul{
+	
+	display: none;
+}*/
+.main-box .planList .one-level:hover > ul{
+	display: block;
+}
+
+.main-box .planList .one-level > ul > li{
+	padding-left:10px;
+		/*border-bottom: 1px solid #ebebeb;*/
+}
+.main-box .planList .one-level > ul > li > h4{
+	height:30px;
+	color: #333333;
+	line-height: 30px;
+	font-size: 12px;
+	padding-left: 12px;
+	position: relative;
+}
+
+.main-box .planList .one-level > ul > li > h4 b{
+	float: right;
+	font-weight: inherit;
+	color: #0182e5;
+	font-size: 12px;
+}
+
+.main-box .planList .one-level > ul > li > h4::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:0px;
+	top:13px;
+	background: url(../images/point_bottom.png) no-repeat;
+	position: absolute;
+}
+.main-box .planList .one-level > ul > li.hover > h4::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:0px;
+	top:13px;
+	background: url(../images/point_top.png) no-repeat;
+	position: absolute;
+}
+.main-box .planList .one-level > ul > li > ol{
+	display: none;
+}
+/*.cueLayer .planList .one-level > ul > li:hover >ol{
+	display: block;
+}*/
+
+.main-box .planList .one-level > ul > li > ol > li{
+	/*border-bottom: 1px solid #ebebeb;*/
+}
+.main-box .planList .one-level > ul > li > ol > li > h4{
+	height:30px;
+	color: #333333;
+	line-height: 30px;
+	font-size: 12px;
+	padding-left: 30px;
+	position: relative;
+}
+.main-box .planList .one-level > ul > li > ol > li > h4 b{
+	float: right;
+	font-weight: inherit;
+	color: #0182e5;
+	font-size: 12px;
+}
+.main-box .planList .one-level > ul > li > ol > li > h4::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:15px;
+	top:13px;
+	background: url(../images/point_bottom.png) no-repeat;
+	position: absolute;
+}
+.main-box .planList .one-level > ul > li > ol > li.hover > h4::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:15px;
+	top:13px;
+	background: url(../images/point_top.png) no-repeat;
+	position: absolute;
+}
+
+.main-box .planList .one-level > ul > li > ol > li > div{
+	display: none;
+	/*display: block;*/
+	/*height:30px;*/
+	color: #333333;
+	line-height: 30px;
+	font-size: 12px;
+	/*padding-left: 40px;*/
+	/*border-bottom: 1px solid #ebebeb;*/	
+	position: relative;
+}
+.main-box .planList .one-level > ul > li > ol > li > div p{
+	height: 30px;
+	padding-left: 40px; 
+}
+.main-box .planList .one-level > ul > li > ol > li > div p.light{
+	color: #0182e5;
+}
+/*.cueLayer .planList .one-level > ul > li > ol > li:hover div{
+	display: block;
+}*/
+.main-box .planList .one-level > ul > li > ol > li > div b{
+	float: right;
+	font-weight: inherit;
+	color: #0182e5;
+	font-size: 12px;
+}
+.main-box{
+	margin-top: -1px;
+	width: 96%;
+	padding-top: 30px;
+	background: #f5f5f5;
+	height:90%;
+	position: relative;
+	border: 1px solid #dbdbdb;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.main-box .lt{  
+	float: left;
+	width: 140px;
+	height: 100%;
+	border-right: 1px solid #CBCBCB;
+}
+.main-box .lt h2{
+	position: relative;
+}
+.main-box .lt h2 i{
+	display: block;
+	width: 14px;
+	height: 13px;
+	position: absolute;
+	top: 3px;
+	right: 10px;
+	background: url(../images/icon-zhinanpici.png) no-repeat;
+	cursor: pointer;
+}
+.main-box .rt{
+	float: left;
+}
+.ImportLayer{
+	width: 476px;
+}
+.ImportLayer > div{
+	padding-left: 20px;
+	padding-bottom: 40px;
+	background: #fff;
+	padding-top: 20px;
+	
+}
+.ImportLayer div > h2{
+	color: #333333;
+	font-size: 12px;
+	overflow: hidden;
+	line-height: 38px;	
+}
+.ImportLayer div > div.browse{
+	height: 28px;
+}
+.ImportLayer div > div.browse input{
+	width: 272px;
+	height: 26px;
+	float: left;
+	border: 1px solid #dbdbdb;
+}
+.ImportLayer div > div.browse a{
+	width: 68px;
+	float: left;
+	height: 26px;
+	color: #0182e5;
+	font-size: 14px;
+	line-height: 26px;
+	margin-left: 10px;
+	text-align: center;
+	position: relative;
+	border: 1px solid #0182e5;
+}
+.ImportLayer div > div.browse a input{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.ImportLayer div > div.browse b{
+	width: 76px;
+	float: left;
+	text-align: center;
+	height: 26px;
+	color: #0182e5;
+	font-size: 14px;
+	line-height: 26px;
+}
+.ImportLayer div > div.checkbox{
+	width: 100%;
+	overflow: hidden;
+}
+.ImportLayer div > div.checkbox div{
+	width: 138px;
+	float: left;
+	color: #333333;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+}
+.ImportLayer div > div.checkbox div input{
+	width:12px;
+	height: 12px;
+	position: relative;	
+	top: 2px;
+	margin-right:5px;
+}
+
+.ImportLayer div.operation-btn{
+	text-align: center;
+	/*overflow: hidden;*/
+	margin-top: 20px;
+	/*width: 70px;*/
+	
+}
+.ImportLayer div.operation-btn a{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	background: #0182e5;
+	color: #fff;
+	font-size: 14px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.ImportLayer div.operation-btn a.cancel{
+	background: #fff;
+	color: #0182e5;
+}
+.main-box .planList .one-level > ul > li > ol > li > h4>a{
+	float: right;
+	color: #0182e5;
+	display: none;
+}
+.main-box .planList .one-level > ul > li > ol > li > div p>a{
+	float: right;
+	color: #0182e5;
+	display: none;
+}

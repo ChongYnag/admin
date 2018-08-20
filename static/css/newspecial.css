@@ -1,0 +1,379 @@
+.switch{
+/*	clear: both;*/
+	height: 26px;
+	background: #fff;
+	margin-top: 10px;
+}
+.switch a{
+	border: 1px solid #dbdbdb;
+	float: left;
+	padding-left: 12px;
+	padding-right: 12px;
+	height: 26px;
+	line-height: 26px;
+		background: #f5f5f5;
+	color: #333333;
+	font-size: 12px;
+}
+.switch a::after{
+	width: 10px;
+	height: 10px;
+	background: url(../images/delete.png) no-repeat;
+	display: inline-block;
+	margin-left: 6px;
+	content: "";
+}
+.switch a.light{
+	background:#f5f5f5;
+	color: #0182e5;
+	border-bottom:none;
+}
+.switch a.light::after{
+	background: url(../images/deletelight.png) no-repeat;
+}
+
+
+.wrapup{
+	width: 96%;
+	padding-top: 30px;
+	background: #f5f5f5;
+	height:90%;
+	border: 1px solid #dbdbdb;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.wrapup .title{
+	border-bottom: 1px solid #dadada;
+	height: 36px;
+}
+.wrapup .title h3{
+	height: 36px;
+	line-height: 36px;
+	font-weight: bold;
+	color: #0182e5;
+	font-size: 16px;
+	float: left;
+}
+
+.wrapup .title b{
+	float: right;
+	height: 24px;
+	margin-left: 10px;
+	font-weight: inherit;
+	background: #0182e5;
+	line-height: 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+	color: #ffffff;
+	font-size: 12px;
+/*	text-align: center;*/
+	border-radius:6px;
+}
+
+.inputbox{
+	padding-top: 20px;
+/*	padding-left: 20px;*/
+/*	overflow: hidden;*/
+	background: #f5f5f5;
+	margin-bottom: 23px;
+}
+.inputbox > div{
+	width: 230px;
+	float: left;
+}
+.inputbox span{
+	float: left;
+	margin-right: 10px;
+	width: 50px;
+	height: 28px;
+	text-align: right;
+	line-height: 28px;
+	color: #333333;
+	font-size: 12px;
+}
+.inputbox  input,.inputbox  div{
+	width: 196px;
+	height: 26px;
+	float: left;
+	border:1px solid #dbdbdb;
+	color: #000;
+	font-size: 12px;
+	text-indent: 2px;
+	background: #fff;
+	    -webkit-appearance:;
+}
+.inputbox  input.light{
+	border-color: #7bc6ff;
+}
+
+.inputbox  div.select{
+	position: relative;
+	cursor: pointer;
+	text-indent: 0;
+}
+.inputbox  div.select select{
+	width: 100%;
+/*	text-indent:9px;*/
+	height: 26px;
+	padding-left:10px;
+	border:none;
+	background: #FFFFFF;
+}
+.inputbox  div.select::after{
+	width: 10px;
+	height: 5px;
+	content: "";
+	right: 10px;
+	top:10px;
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+}
+.inputbox  div.select b{
+color: #333333;
+	line-height: 26px;
+	font-weight: inherit;
+}
+.main-box{
+	
+}
+.main-box .lt{
+	float: left;
+	width: 260px;
+	margin-right: 95px;
+}
+.main-box .lt h3,.main-box .rt h3{
+	color: #3A8ADF;
+	font-size: 14px;
+	margin-top: 35px;
+}
+.main-box .lt h3.two{
+	margin-top: 55px;
+	margin-bottom: 20px;
+}
+.main-box .lt .choos-box{
+	width: 254px;
+	border: 1px solid #dbdbdb;
+	background: #FFFFFF;
+	min-height: 184px;
+	/*overflow-y: scroll;*/
+}
+.main-box .lt p.bottom,.main-box .rt p.bottom{
+	font-size: 12px;
+	margin-top: 15px;
+	color: #5A5A5A;
+}
+.main-box .lt p span{
+	color: #5A5A5A;
+}
+.main-box .rt{
+	float: left;
+}
+.main-box .lt .planList{
+	background: #fff;
+	overflow: hidden;
+}
+.main-box .lt .planList .one-level{
+	cursor: pointer;
+}
+.main-box .lt .planList .one-level > h3{
+	height:33px;
+	padding-left: 40px;
+	color: #333333;
+	line-height: 33px;
+	font-size: 12px;
+	position: relative;
+	border-bottom: 1px solid #ebebeb;
+	
+}
+
+.main-box .lt .planList .one-level > h3::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left: 25px;
+	top:13px;
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+}
+.main-box .lt .planList .one-level:hover > h3::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:25px;
+	top:13px;
+	background: url(../images/arrow2.png) no-repeat;
+	position: absolute;
+}
+/*.main-box .lt .planList .one-level > ul{
+	
+	display: none;
+}*/
+.main-box .lt .planList .one-level:hover > ul{
+	display: block;
+}
+
+.main-box .lt .planList .one-level > ul > li{
+	padding-left:10px;
+		/*border-bottom: 1px solid #ebebeb;*/
+}
+.main-box .lt .planList .one-level > ul > li > h4{
+	height:30px;
+	color: #333333;
+	line-height: 30px;
+	font-size: 12px;
+	padding-left: 12px;
+	position: relative;
+}
+
+.main-box .lt .planList .one-level > ul > li > h4 b{
+	float: right;
+	font-weight: inherit;
+	color: #0182e5;
+	font-size: 12px;
+}
+
+.main-box .lt .planList .one-level > ul > li > h4::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:0px;
+	top:13px;
+	background: url(../images/point_bottom.png) no-repeat;
+	position: absolute;
+}
+.main-box .lt .planList .one-level > ul > li.hover > h4::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:0px;
+	top:13px;
+	background: url(../images/point_top.png) no-repeat;
+	position: absolute;
+}
+.main-box .lt .planList .one-level > ul > li > ol{
+	display: none;
+}
+/*.main-box .lt .planList .one-level > ul > li:hover >ol{
+	display: block;
+}*/
+
+.main-box .lt .planList .one-level > ul > li > ol > li{
+	/*border-bottom: 1px solid #ebebeb;*/
+}
+.main-box .lt .planList .one-level > ul > li > ol > li > h4{
+	height:30px;
+	color: #333333;
+	line-height: 30px;
+	font-size: 12px;
+	padding-left: 30px;
+	position: relative;
+}
+.main-box .lt .planList .one-level > ul > li > ol > li > h4 b{
+	float: right;
+	font-weight: inherit;
+	color: #0182e5;
+	font-size: 12px;
+}
+.main-box .lt .planList .one-level > ul > li > ol > li > h4::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:15px;
+	top:13px;
+	background: url(../images/point_bottom.png) no-repeat;
+	position: absolute;
+}
+.main-box .lt .planList .one-level > ul > li > ol > li.hover > h4::before{
+	width: 10px;
+	height: 5px;
+	content: "";
+	left:15px;
+	top:13px;
+	background: url(../images/point_top.png) no-repeat;
+	position: absolute;
+}
+
+.main-box .lt .planList .one-level > ul > li > ol > li > div{
+	display: none;
+	/*display: block;*/
+	/*height:30px;*/
+	color: #333333;
+	line-height: 30px;
+	font-size: 12px;
+	/*padding-left: 40px;*/
+	/*border-bottom: 1px solid #ebebeb;*/	
+	position: relative;
+}
+.main-box .lt .planList .one-level > ul > li > ol > li > div p{
+	height: 30px;
+	padding-left: 40px; 
+}
+.main-box .lt .planList .one-level > ul > li > ol > li > div p.light{
+	color: #FFFFFF;
+	background-color: #0182e5;
+}
+/*.main-box .lt .planList .one-level > ul > li > ol > li:hover div{
+	display: block;
+}*/
+.main-box .lt .planList .one-level > ul > li > ol > li > div b{
+	float: right;
+	font-weight: inherit;
+	color: #0182e5;
+	font-size: 12px;
+}
+
+.main-box .rt .tab{
+	margin-top: 20px;
+}
+.main-box .rt .tab>span{
+	display: inline-block;
+	cursor: pointer;
+	padding: 5px 10px;
+	font-size: 12px;
+	position: relative;
+	top:1px;
+}
+.main-box .rt .tab>span.light{
+	border: 1px solid #DDDDDD;
+	border-bottom: none;
+	color: #3B8AE0;
+	background: #FFFFFF;
+}
+.main-box .rt .tab .tab-box{
+	width: 330px;
+	height: 294px;
+	border: 1px solid #DBDBDB;
+	background: #FFFFFF;
+}
+.main-box .rt .tab .tab-box>div{
+	width: 292px;
+	font-size: 12px;
+	margin:15px auto;
+}
+.main-box .rt .tab .tab-box div.check-all{
+	margin-bottom: 15px;
+}
+.main-box .rt .tab .tab-box div input{
+	margin-right: 5px;
+	margin-left: 6px;
+}
+.main-box .rt .tab .tab-box div.check-tr{
+	background: #F5F5F5;
+	height: 26px;
+	line-height: 26px;
+}
+.input-list ul{
+	margin-top: 10px;
+	overflow: hidden;
+}
+.input-list ul li{
+	float: left;
+	width: 130px;
+	margin-bottom: 10px;
+}
+.input-list ul li.final{
+	padding-left: 23px;
+}
+.main-box .rt .tab .tab-box>div.span_1{
+	display: none;
+}

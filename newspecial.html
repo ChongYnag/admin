@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+	<!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+
+	<head>
+		<meta charset="utf-8">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>admin</title>
+		<!-- InstanceEndEditable -->
+		<link href="static/css/comm.css" rel="stylesheet" type="text/css" />
+		<link href="static/css/template.css" rel="stylesheet" type="text/css" />
+		<script src="lib/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+		<script src="lib/layer/2.4/layer.js" type="text/javascript"></script>
+		<!--上面是模板页内容不可动-->
+		<!-- InstanceBeginEditable name="head" -->
+		<!--这里面是单页面引入css，js的地方-->
+		<link href="static/css/newspecial.css" rel="stylesheet" type="text/css">
+		<!-- InstanceEndEditable -->
+		<!--下面是模板页内容不可动-->
+	</head>
+
+	<body>
+		<div class="header">
+			<a class="logo" href="javascript:"><img src="static/images/logo.png" alt="" /></a>
+			<div class="nav">
+				<a href="javascript:">首页<i></i></a>
+				<a class="light" href="javascript:">专项管理<i></i></a>
+				<a href="javascript:">项目管理<i></i></a>
+				<a href="javascript:">成果管理<i></i></a>
+				<a href="javascript:">数据服务<i></i></a>
+				<a href="javascript:">系统设置<i></i></a>
+			</div>
+			<div class="user">
+				<p>
+					<img src="static/images/head.png" alt="">
+					<span>孟小玲  XX部门</span>
+				</p>
+				<div>
+					<a href="javascript:"><img src="static/images/user.png" alt="" />个人设置</a>
+					<a href="javascript:"><img src="static/images/help.png" alt="" />帮助</a>
+					<a href="javascript:"><img src="static/images/quit.png" alt="" />退出</a>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="leftMenu">
+				<h5>专项名称专项名称...</h5>
+				<div class="light">
+					<h3><img src="static/images/leftMenuIcon1.png" alt="" />专项授权</h3>
+					<ul>
+						<li class="hover">专项指派</li>
+						<li>项目授权</li>
+					</ul>
+				</div>
+				<!--<div>
+					<h3><img src="static/images/leftMenuIcon2.png" alt="" />组织机构<i>20</i></h3>
+					<ul>
+						<li>专项信息</li>
+						<li>专项指南</li>
+						<li>专项流程</li>
+						<li>专项项目</li>
+					</ul>
+				</div>
+				<div>
+					<h3><img src="static/images/leftMenuIcon3.png" alt="" />角色管理<i>5</i></h3>
+					<ul>
+						<li>专项信息</li>
+						<li>专项指南</li>
+						<li>专项流程</li>
+						<li>专项项目</li>
+					</ul>
+				</div>-->
+
+			</div>
+			<div class="region">
+				<!--上面是模板页内容不可动-->
+				<!-- InstanceBeginEditable name="home" -->
+				<div class="switch">
+					<a class="light" href="newspecial.html">新建</a>
+				</div>
+				<div class="wrapup">
+					<div class="title">
+						<h3>专项信息</h3>
+						<b>取消</b>
+						<b>保存</b>
+						<b>取消授权</b>
+						<b>授权初始化</b>
+					</div>
+					<div class="main-box">
+						<div class="lt">
+							<h3>请选择需要指派的年度专项：</h3>
+							<div class="inputbox">
+								<span>年度</span>
+								<div class="select">
+									<select>
+										<option>2018</option>
+										<option>2018</option>
+										<option>2018</option>
+									</select>
+								</div>
+							</div>
+							<div class="inputbox">
+								<span>专项名称</span>
+								<div class="select">
+									<select>
+										<option>专项名称</option>
+										<option>专项名称</option>
+										<option>专项名称</option>
+									</select>
+								</div>
+							</div>
+							<h3 class="two">请选择部门岗位/人员：</h3>
+							<div class="choos-box planList">
+								<div class="one-level">
+									<ul>
+										<li>
+											<h4>业务司局</h4>
+											<ol>
+												<li>
+													<h4>资管司</h4>
+													<div>
+														<p class="light">XXX岗位</p>
+														<p>XXX司</p>
+													</div>
+												</li>
+											</ol>
+											<ol>
+												<li>
+													<h4>资管司</h4>
+													<div>
+														<p>XXX岗位</p>
+													</div>
+												</li>
+											</ol>
+										</li>
+										<li>
+											<h4>专业机构</h4>
+											<ol>
+												<li>
+													<h4>专项管理员</h4>
+													<div>
+														<p>处长</p>
+													</div>
+												</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<p class="bottom">授权人： <span>小明</span></p>
+						</div>
+
+						<div class="rt">
+							<h3>请按照专项管理阶段进行分阶段授权：</h3>
+							<div class="tab">
+								<span id="0" class="light">预申报阶段</span>
+								<span id="1">正式申报阶段</span>
+								<div class="tab-box">
+									<div class="span_0">
+										<div class="check-all">
+											<input type="checkbox" name="" id="" value="" />全部
+										</div>
+										<div class="input-list">
+											<div class="check-tr">
+												<input type="checkbox" name="" id="" value="" />形式审查
+											</div>
+											<ul>
+												<li><input type="checkbox" name="" id="" value="" />形式审查</li>
+												<li><input type="checkbox" name="" id="" value="" />形式确认</li>
+												<li><input type="checkbox" name="" id="" value="" />重新审查</li>
+												<li><input type="checkbox" name="" id="" value="" />导出形式意见</li>
+												<li class="final">形审反馈</li>
+											</ul>
+										</div>
+										<div class="input-list">
+											<div class="check-tr">
+												<input type="checkbox" name="" id="" value="" />形式审查
+											</div>
+											<ul>
+												<li><input type="checkbox" name="" id="" value="" />形式审查</li>
+												<li><input type="checkbox" name="" id="" value="" />形式确认</li>
+												<li><input type="checkbox" name="" id="" value="" />重新审查</li>
+												<li><input type="checkbox" name="" id="" value="" />导出形式意见</li>
+												<li class="final">形审反馈</li>
+											</ul>
+										</div>
+										
+									</div>
+									<div class="span_1">
+										<div class="check-all">
+											<input type="checkbox" name="" id="" value="" />全部
+										</div>
+										<div class="input-list">
+											<div class="check-tr">
+												<input type="checkbox" name="" id="" value="" />形式审查
+											</div>
+											<ul>
+												<li><input type="checkbox" name="" id="" value="" />形式审查</li>
+												<li><input type="checkbox" name="" id="" value="" />形式确认</li>
+												<li><input type="checkbox" name="" id="" value="" />重新审查</li>
+												<li><input type="checkbox" name="" id="" value="" />导出形式意见</li>
+												<li class="final">形审反馈</li>
+											</ul>
+										</div>
+										<div class="input-list">
+											<div class="check-tr">
+												<input type="checkbox" name="" id="" value="" />形式审查
+											</div>
+											<ul>
+												<li><input type="checkbox" name="" id="" value="" />形式审查</li>
+												<li><input type="checkbox" name="" id="" value="" />形式确认</li>
+												<li><input type="checkbox" name="" id="" value="" />重新审查</li>
+												<li><input type="checkbox" name="" id="" value="" />导出形式意见</li>
+												<li class="final">形审反馈</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p class="bottom">指派日期： <span>2018/01/01</span></p>
+						</div>
+					</div>
+				</div>
+				<!-- InstanceEndEditable -->
+				<!--下面是模板页内容不可动-->
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				$(document).bind('click', function() {
+					$(".user div").fadeOut(100)
+				});
+				$(".user").bind('click', function(e) {
+					$(".user div").fadeIn(100)
+					stopPropagation(e); //调用停止冒泡方法,阻止document方法的执行
+				});
+				$(".main").height($(window).height() - 60)
+
+				$(".leftMenu div").on("click", function() {
+					$(this).addClass("light").siblings().removeClass("light")
+				})
+				
+				
+				//请选择部门岗位/人员
+				$(".main-box .lt .planList .one-level > ul > li > h4").on("click",function(){
+					if($(this).parent().find("ol").css("display") == "none"){
+						$(this).parent().find("ol").css("display","block");
+						$(this).parent().addClass("hover");
+					}else{
+						$(this).parent().find("ol").css("display","none");
+						$(this).parent().removeClass("hover");
+					}
+				});
+				$(".main-box .lt .planList .one-level > ul > li > ol > li > h4").on("click",function(){
+					if($(this).next().css("display") == "none"){
+						$(this).next().css("display","block");
+						$(this).parent().addClass("hover");
+					}else{
+						$(this).next().css("display","none");
+						$(this).parent().removeClass("hover");
+					}
+				});
+				$(".main-box .lt .planList .one-level > ul > li > ol > li > div p").on("click",function(){
+					$(".main-box .lt .planList .one-level > ul > li > ol > li > div p").removeClass("light");
+					$(this).addClass("light");
+				})
+				
+				//tab页切换
+				$(".main-box .rt .tab>span").on("click",function(){
+					$(this).addClass("light").siblings().removeClass("light");
+					var id = 'span_'+$(this).attr("id");
+					$(".main-box .rt .tab .tab-box>div").hide();
+					$(".main-box .rt .tab .tab-box>div."+id).show();
+				})
+			})
+
+			function stopPropagation(e) {
+				if(e.stopPropagation)
+					e.stopPropagation(); //停止冒泡  非ie
+				else
+					e.cancelBubble = true; //停止冒泡 ie
+			}
+		</script>
+	</body>
+	<!-- InstanceEnd -->
+
+</html>

@@ -1,0 +1,280 @@
+/* CSS Document */
+.header{
+	height: 60px;
+	background:#34495e;
+	min-width: 1400px;
+}
+.header > a{
+	width: 262px;
+	height: 36px;
+	float: left;
+	margin-top: 12px;
+	margin-left:20px;
+	margin-right: 40px;
+}
+.header > a img{
+	width: 100%;
+	height: 100%
+}
+.header > div.nav a{
+	position: relative;
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.header > div.nav a::before{
+	width: 16px;
+	height: 16px;
+	content: "";
+	position: relative;
+	display: inline-block;
+}
+.header > div.nav a:nth-child(1)::before{
+	background:url(../images/icon-hedaer-home.png) no-repeat;
+	margin-right: 6px;
+	top: 1px;
+}
+.header > div.nav a:nth-child(2)::before{
+	background:url(../images/icon-hedaer-zxgl.png) no-repeat;
+	margin-right: 6px;
+	top: 1px;
+}
+.header > div.nav a:nth-child(3)::before{
+	background:url(../images/icon-hedaer-xmgl.png) no-repeat;
+	margin-right: 6px;
+	top: 1px;
+}
+.header > div.nav a:nth-child(4)::before{
+	background:url(../images/icon-hedaer-cggl.png) no-repeat;
+	margin-right: 6px;
+	top: 1px;
+}
+.header > div.nav a:nth-child(5)::before{
+	background:url(../images/icon-hedaer-data.png) no-repeat;
+	margin-right: 6px;
+	top: 1px;
+}
+.header > div.nav a:nth-child(6)::before{
+	background:url(../images/icon-hedaer-set.png) no-repeat;
+	margin-right: 6px;
+	top: 1px;
+}
+.header > div.nav a i{
+	height: 3px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	display: block;
+	background: #34495e;
+}
+.header > div.nav a.light{
+	color: #0182e5;
+}
+.header > div.nav a.light:nth-child(1)::before{
+		background:url(../images/icon-hedaer-home-active.png) no-repeat;
+}
+.header > div.nav a.light:nth-child(2)::before{
+		background:url(../images/leftMenuIcon1.png) no-repeat;
+}
+.header > div.nav a.light:nth-child(3)::before{
+		background:url(../images/icon-hedaer-xmgl-active.png) no-repeat;
+}
+.header > div.nav a.light:nth-child(4)::before{
+		background:url(../images/icon-hedaer-cggl-active.png) no-repeat;
+}
+.header > div.nav a.light:nth-child(5)::before{
+		background:url(../images/icon-hedaer-sjfw-active.png) no-repeat;
+}
+.header > div.nav a.light:nth-child(6)::before{
+		background:url(../images/icon-hedaer-setlight.png) no-repeat;
+}
+
+
+.header > div.nav a.light i{
+	background: #0182e5;
+}
+
+
+.header > div.user{
+	margin-top: 10px;
+	float: right;
+	cursor: pointer;
+	margin-right: 18px;
+	position: relative;
+}
+.header > div.user p{
+	height: 40px;
+	color: #fff;
+}
+.header > div.user p img{
+	width: 40px;
+	height: 40px;
+	margin-right: 6px;
+	vertical-align: middle;
+	font-size: 12px;
+}
+.header > div.user p span{
+	color: #fff;
+	font-size: 12px;
+}
+.header > div.user  div{
+	position: absolute;
+	width: 80px;
+	display: none;
+	top:50px;
+	padding-top:0px;
+	padding-bottom: 10px;
+	background: #34495e;
+	z-index: 999;
+}
+.header > div.user div a{
+	width: 70px;
+	display: block;
+	padding-left: 10px;
+	font-size: 12px;
+	height: 22px;
+	color: #fff;
+	line-height: 22px;
+	margin-top: 5px;
+}
+.header > div.user div a img{
+	position: relative;
+	top:-1px;
+	margin-right: 5px;
+}
+.header > div.user div a:hover{
+	background: #0182e5;
+	
+}
+
+
+
+.main{
+	min-width: 1400px;
+	overflow:hidden;
+	clear: both;
+}
+.main .leftMenu{
+	width: 160px;
+	float: left;
+	height: 100%;
+	background: #f5f5f5;
+}
+.main .leftMenu div{
+	cursor: pointer;
+}
+.main .leftMenu div h3{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 10px;
+	color: #333333;
+	position: relative;
+	font-size: 16px;
+}
+
+.main .leftMenu div h3 img{
+	margin-right: 8px;
+	position: relative;
+	top:-2px;
+}
+
+.main .leftMenu div h3 i{
+	height: 14px;
+	min-width: 14px;
+	border-radius: 14px;
+	background: #ff6a5a;
+	color: #fff;
+	padding-left:5px;
+	padding-right:5px;
+	margin-left: 5px;
+	position: relative;
+	top:-2px;
+	font-size: 12px;
+}
+.main .leftMenu div h3::after{
+	width: 10px;
+	height: 5px;
+	background: url(../images/arrow.png) no-repeat;
+	content: "";
+	position: absolute;
+	right: 10px;
+	top:50%;
+	margin-top: -2.5px;
+	display: inline-block;
+}
+.main .leftMenu div ul{
+	display: none;
+}
+.main .leftMenu div.light ul{
+	display: block
+}
+.main .leftMenu div ul li{
+	height: 36px;
+	line-height: 36px;
+	padding-left: 34px;	
+	font-size:14px;
+	color: #333333;
+	border-left: 2px solid #e6e6e6;
+}
+.main .leftMenu div ul li:hover{
+	background: #0182e5;
+	color: #fff;
+/*	border-left: 2px solid #ff6a5a;*/
+}
+.main .leftMenu div ul li.hover{
+	background: #0182e5;
+		color: #fff;
+/*	border-left: 2px solid #ff6a5a;*/
+}
+
+
+.main .leftMenu div.light h3::after{
+	margin-top: -3px;
+		background: url(../images/arrow2.png) no-repeat;
+}
+.main .leftMenu div.light h3,.main .leftMenu div.light ul{
+	background: #e6e6e6;
+}
+
+
+
+.main .region{
+/*	background: #f5f5f5;*/
+	margin-left: 180px;
+	height: 100%;
+}
+.leftMenu h5{
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 5px;
+	color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ddd*/

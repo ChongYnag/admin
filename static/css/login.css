@@ -1,0 +1,99 @@
+html,
+body {
+	height: 100%
+}
+
+body {
+	font-size: 14px
+}
+
+.header,
+.footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 99
+}
+
+.header {
+	top: 0;
+	height: 60px;
+	background: #426374 url(../images/logo.png) no-repeat 0 center
+}
+
+.loginWraper {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	background:url(../images/admin-loginform-bg.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+.login{
+	width: 320px;
+	height: 447px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -160px;
+	margin-top: -222.5px;
+	text-align: center;
+}
+.form-group{
+	margin-top: 20px;
+	width: 320px;
+	height: 320px;
+	background:url(../images/form-group-bg.png) no-repeat center;
+}
+.form-info{
+	width: 232px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.list{
+	text-align: left;
+	background: #FFFFFF;
+	width: 210px;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+.list input{
+	width: 184px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	border: none;
+	padding-left: 26px;
+	background: url(../images/user_icon.png)no-repeat left center;
+}
+.list.pwd input{ 
+	background: url(../images/password_icon.png)no-repeat left center;
+}
+.list.code input{ 
+	width: 80px;
+	background: url(../images/code_icon.png)no-repeat left center;
+}
+.list.code a{
+	display: inline-block;
+	width: 87px;
+	height: 33px;
+} 
+.list.code img{
+	width: 87px;
+	height: 33px;
+}
+.submit{
+	width: 230px;
+	height: 44px;
+	background: #3382DE;
+	border: none;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 600;
+}
