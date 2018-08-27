@@ -1,0 +1,601 @@
+.switch{
+/*	clear: both;*/
+	height: 26px;
+	background: #fff;
+	margin-top: 10px;
+	position: relative;
+	z-index: 123;
+}
+.switch a{
+	border: 1px solid #dbdbdb;
+	float: left;
+	padding-left: 12px;
+	padding-right: 12px;
+	height: 26px;
+	line-height: 26px;
+	background: #f5f5f5;
+	color: #333333;
+	font-size: 12px;
+}
+.switch a::after{
+	width: 10px;
+	height: 10px;
+	background: url(../images/delete.png) no-repeat;
+	display: inline-block;
+	margin-left: 6px;
+	content: "";
+}
+.switch a.light{
+	background:#f5f5f5;
+	color: #0182e5;
+	border-bottom:none;
+}
+.switch a.light::after{
+	background: url(../images/deletelight.png) no-repeat;
+}
+.wrapup{
+	margin-top: -1px;
+	width: 96%;
+	padding-top: 30px;
+	background: #f5f5f5;
+	height:90%;
+	position: relative;
+	border: 1px solid #dbdbdb;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.inputbox{
+	padding-top: 20px;
+/*	padding-left: 20px;*/
+/*	overflow: hidden;*/
+	background: #f5f5f5;
+}
+.inputbox > div{
+	width: 290px;
+	float: left;
+}
+.inputbox > div span{
+	float: left;
+	margin-right: 10px;
+	width: 70px;
+	height: 28px;
+	text-align: right;
+	line-height: 28px;
+	color: #333333;
+	font-size: 12px;
+}
+.inputbox > div input,.inputbox > div div{
+	width: 198px;
+	height: 26px;
+	float: left;
+	border:1px solid #dbdbdb;
+	color: #000;
+	font-size: 12px;
+	text-indent: 2px;
+	background: #fff;
+	    -webkit-appearance:;
+}
+.inputbox div input.light{
+	border-color: #7bc6ff;
+}
+
+.inputbox > div div.select{
+	position: relative;
+	cursor: pointer;
+	text-indent: 0;
+}
+.inputbox > div div.select select{
+	width: 100%;
+/*	text-indent:9px;*/
+	height: 26px;
+	border:none;
+	background: #FFFFFF;
+}
+.inputbox > div div.select::after{
+	width: 10px;
+	height: 5px;
+	content: "";
+	right: 10px;
+	top:10px;
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+}
+.inputbox > div div.select b{
+color: #333333;
+	line-height: 26px;
+	font-weight: inherit;
+}
+
+.inputbox input.query{
+	width: 70px;
+	height: 28px;
+	border: none;
+	outline: none;
+	margin-left: 20px;
+	float: left;
+	cursor: pointer;
+	background: url(../images/query.png) no-repeat;
+}
+
+.inputbox  input.reset{
+	width: 58px;
+	height: 28px;
+	border: none;
+	outline: none;
+	margin-left: 8px;
+	cursor:pointer;
+	float: left;
+	background: url(../images/reset.png) no-repeat;
+}
+
+.inputbox  .b{
+	height: 28px;
+	margin-left: 10px;
+	border:none;
+	position: relative;
+	
+	background: none;
+	font-size: 12px;
+	color: #333333;
+	width: 75px;
+	float: left;
+	line-height: 28px;
+}
+
+.inputbox  .b::after{
+	width: 10px;
+	height: 5px;
+	content: "";
+	right:8px;
+	top:10px;
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+}
+.inputbox .b:hover{
+	background: #e6e6e6;
+}
+.inputbox .b:hover::after{
+	width: 10px;
+	height: 5px;
+	content: "";
+	right:8px;
+	top:10px;
+	background: url(../images/arrow2.png) no-repeat;
+	position: absolute;
+}
+
+
+.inputbox > div > .b ul{
+/*	background:#e6e6e6;*/
+	display: none;
+	position: absolute;
+	top:26px;
+	width: 98%;
+	border: 1px solid #e6e6e6;
+}
+.inputbox > div > .b:hover ul{
+	display: block
+}
+
+.inputbox > div > .b ul li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	background: #e6e6e6;
+}
+.inputbox > div > .b li:hover{
+	background: #0182e5;
+	color: #fff;
+}
+.operation{
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-left: 20px;
+	overflow: hidden;
+	background: #f5f5f5; 
+}
+.operation > div.btn {
+/*	width: 76px;*/
+	padding-left: 8px;
+	padding-right: 8px;
+	height: 22px;
+	background: #128ae7;
+}
+.operation  div.select{
+	position: relative;
+}
+.operation  div.select select{
+	width: 82px;
+	height: 22px;
+	padding-left: 10px;
+}
+.operation  div.select img{
+	position: absolute;
+	right: 5px;
+	top:8px;
+}
+.operation > div img{
+/*	margin-left:6px;	*/
+/*	margin-left:6px;*/
+	position: relative;
+	top:-2px;
+}
+.operation > div{
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 22px;
+	margin-right: 10px;
+	float: left;
+}
+
+.projectlist{
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 98%;
+}
+
+.projectlist th{
+	height: 36px;
+	background: #e6e6e6;
+	color: #333333;
+	font-size: 12px;
+}
+.projectlist tr b{
+	width: 12px;
+	height:12px;
+	display: block;
+	margin-left: 8px;
+	background:url(../images/select.png) no-repeat;
+}
+
+.projectlist td{
+	height: 36px;
+	text-align: center;
+	color: #333;
+	font-size: 12px;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.projectlist td i{
+	width: 12px;
+	cursor: pointer;
+	height: 12px;
+	display:inline-block;
+}
+.projectlist td i.cancel{
+	background: url(../images/cancel.png) no-repeat;
+}
+
+.projectlist td i.delete2{
+	margin-right: 10px;
+	background: url(../images/delete2.png) no-repeat;
+}
+
+.projectlist td i.again{
+	margin-right: 10px;
+	background: url(../images/again.png) no-repeat;
+}
+.projectlist td i.fenzu{
+	margin-right: 10px;
+	background: url(../images/fenzu.png) no-repeat;
+}
+.projectlist td i.queren{
+	margin-right: 10px;
+	background: url(../images/queren.png) no-repeat;
+}
+.projectlist td i.daochu{
+	margin-right: 10px;
+	background: url(../images/daochu.png) no-repeat;
+}
+.projectlist td em.yes{
+	color:#00bda6;
+}
+
+.projectlist td em.not{
+	color: #ff6a5a;
+}
+
+.projectlist th div.accredit{
+	width: 90px;
+	height: 36px;
+	margin: auto auto;
+	position: relative;
+}
+.projectlist th div.accredit h3{
+	width: 90px;
+	height: 36px;
+	line-height: 36px;
+}
+.projectlist th div.accredit ul{
+	background:#e6e6e6;
+	display: none;
+	border: 1px solid #e6e6e6;
+}
+.projectlist th div.accredit ul li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	background: #e6e6e6;
+}
+.projectlist th div.accredit ul li:hover{
+	background: #0182e5;
+	color: #fff;
+}
+.projectlist th div.accredit::after{
+	width: 10px;
+	height: 5px;
+	content: "";
+	right:8px;
+	top:15px;
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+}
+.projectlist th div.accredit:hover::after{
+	width: 10px;
+	height: 5px;
+	content: "";
+	right:8px;
+	top:15px;
+	background: url(../images/arrow2.png) no-repeat;
+	position: absolute;
+}
+
+.projectlist th div.accredit:hover ul{
+	display: block
+}
+
+.pitchon {
+	background: #e2f2ff;
+}
+
+.projectlist tr.pitchon i.cancel{
+	background: url(../images/cancelLight.png) no-repeat;
+}
+
+.projectlist tr.pitchon i.delete2{
+	background: url(../images/delete2Light.png) no-repeat;
+}
+
+.projectlist tr.pitchon i.again{
+	background: url(../images/againLight.png) no-repeat;
+}
+.projectlist tr.pitchon i.fenzu{
+	background: url(../images/fenzuLight.png) no-repeat;
+}
+.projectlist tr.pitchon i.queren{
+	background: url(../images/querenLight.png) no-repeat;
+}
+.projectlist tr.pitchon i.daochu{
+	background: url(../images/daochuLight.png) no-repeat;
+}
+
+
+#paging{
+	position: absolute;
+	bottom: 20px;
+	right: 20px
+}
+
+
+.cueLayer{
+	display: none;
+	height: 190px;
+	background: #fff;
+}
+.cueLayer h3{
+	background: #34495e;
+	height: 40px;
+}
+.cueLayer h3  span{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	padding-left: 16px;
+}
+.cueLayer h3 b{
+	width: 18px;
+	float: right;
+	cursor: pointer;
+	height: 18px;
+	background: url(../images/closeleay.png) no-repeat;
+	margin-top: 9px;
+	margin-right: 10px;
+}
+
+.cueLayer div{
+	padding-top: 30px;
+	text-align: center;
+}
+.cueLayer div img{
+	margin-bottom: 11px;
+}
+
+#short input{
+	width: 80px;
+}
+#short input.disabled{
+	width: 36px;
+	border: none;
+	text-align: center;
+	background: transparent;
+}
+
+
+.cueLayer .title{
+	text-align: center;
+}
+.cueLayer .title b{
+	display: inline-block;
+	width: 40px;
+	height: 30px;
+	margin-left: 10px;
+	font-weight: inherit;
+	background: #0182e5;
+	line-height: 30px;
+	padding-left: 12px;
+	padding-right: 12px;
+	color: #ffffff;
+	font-size: 16px;
+/*	text-align: center;*/
+cursor: pointer;
+	border-radius:6px;
+}
+.cueLayer ul{
+	/*padding: 0 25px;*/
+}
+.cueLayer ul li{
+	float: left;
+	line-height: 30px;
+	margin: 0 30px;
+	margin-bottom: 15px;
+}
+.cueLayer ul li.check-box{
+	width: 228px;
+}
+
+.cueLayer ul li.name{
+	position: relative;
+	margin-bottom: 20px;
+}
+.cueLayer ul li.name input{
+	width: 470px!important;
+	}
+.cueLayer ul li.name p{
+	position: absolute;
+	top:25px;
+	left: 60px;
+	padding: 0;
+	color: #ff6a5a;
+	font-size: 12px;
+}
+.cueLayer ul li span{
+	float: left;
+	margin-right: 10px;
+	font-size: 12px;
+	width: 48px;
+	text-align: right;
+	height: 26px;
+	line-height: 26px;
+}
+.cueLayer ul li.num span{
+	width: 60px;
+}
+.cueLayer ul li input[type="text"]{
+	width: 170px;
+	height: 26px;
+	float: left;
+	padding-left: 10px;
+	border:1px solid #dbdbdb;
+	color: #000;
+	font-size: 12px;
+	text-indent: 2px;
+	background: #fff;
+	    -webkit-appearance:;
+}
+.cueLayer > div div.select{
+	float: left;
+	position: relative;
+	cursor: pointer;
+	text-indent: 0;
+	width: 170px;
+	border: 1px solid #dbdbdb;
+	font-size: 12px;
+	padding:0;
+	padding-left: 10px;
+}
+.cueLayer > div div.select select{
+	
+	width: 100%;
+/*	text-indent:9px;*/
+	height: 26px;
+	border:none;
+	background: #FFFFFF;
+	line-height: 26px;
+}
+.cueLayer > div div.select::after{
+	width: 10px;
+	height: 5px;
+	content: "";
+	right: 10px;
+	top:10px;
+	background: url(../images/arrow.png) no-repeat;
+	position: absolute;
+}
+.cueLayer > div div.select b{
+color: #333333;
+	line-height: 26px;
+	font-weight: inherit;
+}
+.fenzujump ul{
+	    padding-left: 15px;
+	overflow: hidden;
+}
+.fenzujump ul li{
+	margin: 0 5px;
+	margin-bottom:15px;
+}
+.fenzujump ul li.renwuName input{
+	width: 152px;
+	line-height: 30px;
+	border: none;
+}
+.fenzujump ul li span{
+	width: auto;
+}
+.fenzujump > div div.select{
+	width: 150px;
+}
+.fenzujump ul li.a span{
+	    display: inline-block;
+    width: 40px;
+    height: 30px;
+    font-weight: inherit;
+    background: #0182e5;
+    line-height: 30px;
+    padding-right: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    /* text-align: center; */
+    cursor: pointer;
+    border-radius: 6px;
+}
+.fenzujump div{
+	padding-top: 20px;
+}
+.fenzujump .hr{
+	padding: 0;
+	padding-left: 20px;
+	text-align: left;
+}
+.fenzujump .hr p{
+	overflow: hidden;
+}
+.fenzujump .hr p span{
+	float: left;
+}
+.fenzujump .hr p i{
+	float: left;
+	width: 470px;
+	display: block;
+	border-top: 1px solid #e6e6e6;
+	margin-top: 10px;
+	margin-left: 2px;
+}
+.fenzujump .projectlist{
+	margin: 0;
+	margin-top: 10px;
+	width: 556px;
+}
+.fenzujump .projectlist th,.fenzujump .projectlist td{
+	height: 30px;
+}
+.fenzujump .projectlist th{
+	background: #F3F3F3;
+	text-align: center;
+}
+
+.fenzujump table,.fenzujump table tr th, .fenzujump table tr td { border:1px solid #e6e6e6; }
