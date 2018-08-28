@@ -194,10 +194,10 @@
 						<div id="addfenzu" class="btn">
 							<img style="top:0px;" src="static/images/iconfenzu.png" alt="" /> 分组授权
 						</div>
-						<div class="btn">
+						<div id="addrenwu" class="btn">
 							<img style="top:-1px;" src="static/images/iconqueren.png" alt="" /> 任务确认
 						</div>
-						<div class="btn">
+						<div id="adddaochu" class="btn">
 							<img style="top:-1px;" src="static/images/icondaochu.png" alt="" /> 导出专家名单
 						</div>
 					</div>
@@ -234,7 +234,7 @@
 								</td>
 								<td>2018-02-01</td>
 								<td>2018-12-08</td>
-								<td>1</td>
+								<td class="link"><font color="#0182e5">1</font></td>
 								<td>XX机构</td>
 								<td>评审</td>
 								<td>网络</td>
@@ -255,7 +255,7 @@
 								</td>
 								<td>2018-02-01</td>
 								<td>2018-12-08</td>
-								<td>1</td>
+								<td class="link"><font color="#0182e5">1</font></td>
 								<td>XX机构</td>
 								<td>评审</td>
 								<td>网络</td>
@@ -276,7 +276,7 @@
 								</td>
 								<td>2018-02-01</td>
 								<td>2018-12-08</td>
-								<td>1</td>
+								<td class="link"><font color="#0182e5">1</font></td>
 								<td>XX机构</td>
 								<td>评审</td>
 								<td>网络</td>
@@ -297,7 +297,7 @@
 								</td>
 								<td>2018-02-01</td>
 								<td>2018-12-08</td>
-								<td>1</td>
+								<td class="link"><font color="#0182e5">1</font></td>
 								<td>XX机构</td>
 								<td>评审</td>
 								<td>网络</td>
@@ -318,7 +318,7 @@
 								</td>
 								<td>2018-02-01</td>
 								<td>2018-12-08</td>
-								<td>1</td>
+								<td class="link"><font color="#0182e5">1</font></td>
 								<td>XX机构</td>
 								<td>评审</td>
 								<td>网络</td>
@@ -339,7 +339,7 @@
 				</div>
 
 				<div class="cueLayer" id="Dellayer">
-					<h3><span>专项授权失败提示</span><b  onclick="layer.close(Dellayer) "></b></h3>
+					<h3><span>删除评审任务</span><b  onclick="layer.close(Dellayer) "></b></h3>
 					<div>
 						<img src="static/images/delTitleIcon.png" alt="" />
 						<p>是否删除评审任务及其评审分组？</p>
@@ -351,7 +351,7 @@
 				</div>
 
 				<div class="cueLayer" id="Newps">
-					<h3><span>专项授权成功提示</span><b onclick="layer.close(Newps) "></b></h3>
+					<h3><span>新建评审任务</span><b onclick="layer.close(Newps) "></b></h3>
 					<div>
 						<ul>
 							<li>
@@ -451,13 +451,13 @@
 						</ul>
 					</div>
 					<div class="title">
-						<b>确认</b>
+						<b>保存</b>
 						<b onclick="layer.close(Newps) ">取消</b>
 					</div>
 				</div>
 
 				<div class="cueLayer fenzujump" id="fenzujump">
-					<h3><span>专项授权成功提示</span><b onclick="layer.close(fenzujump) "></b></h3>
+					<h3><span>任务分组授权</span><b onclick="layer.close(fenzujump) "></b></h3>
 					<div>
 						<ul>
 							<li class="renwuName">
@@ -530,8 +530,165 @@
 						</div>
 					</div>
 					<div class="title">
-						<b>确认</b>
+						<b>保存</b>
 						<b onclick="layer.close(fenzujump) ">取消</b>
+					</div>
+				</div>
+				<div class="cueLayer fenzujump renwujump" id="renwujump">
+					<h3><span>评审任务确认</span><b onclick="layer.close(renwujump) "></b></h3>
+					<div>
+						<p class="list">
+							任务名称：<span>XXXXX</span>
+						</p>
+						<p class="list">
+							开始日期：<span>2018-01-01</span> 结束日期：<span>2018-01-01</span> 任务类型：<span>评审</span>
+						</p>
+						<p class="list">
+							评审形式：<span>网络</span> 组织单位：<span>单位一</span> 
+						</p>
+						<ul>
+							<li>
+								<span>确认日期：</span>
+								<input type="text" name="" id="" value="" />
+							</li>
+							<li class="two">
+								<span>确认人：</span>
+								<input type="text" name="" id="" value="" />
+							</li>
+							<li class="final">
+								<span>任务状态：</span>
+								<div class="select">
+									<select>
+										<option>已确认</option>
+										<option>已确认</option>
+										<option>已确认</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+						<div class="hr">
+							<p>
+								<span>评审分组列表</span> <i></i>
+							</p>
+							<table class="projectlist" border="1">
+								<tbody>
+									<tr>
+										<th>序号</th>
+										<th>评审分组</th>
+										<th>已选项目</th>
+										<th>已选专家</th>
+										<th>负责人</th>
+										<th>处室</th>
+										<th>状态</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>评审一组</td>
+										<td>2</td>
+										<td>2</td>
+										<td>高峰</td>
+										<td>处室一</td>
+										<td><em class="yes">已确认</em></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>评审二组</td>
+										<td>1</td>
+										<td>1</td>
+										<td>马云</td>
+										<td>处室二</td>
+										<td><em class="not">未确认</em></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="title">
+						<b>保存</b>
+						<b onclick="layer.close(renwujump) ">取消</b>
+					</div>
+				</div>
+				<div class="cueLayer Daochu" id="Daochu">
+					<h3><span>导出专家名单</span><b  onclick="layer.close(Daochu) "></b></h3>
+					<div>
+						<p>请选择需要导出的专家名单字段</p>
+						<ul>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> 专家姓名
+							</li>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> 单位
+							</li>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> 职称
+							</li>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> 职务
+							</li>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> 评审分组
+							</li>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> 评审任务
+							</li>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> e_mail
+							</li>
+						</ul>
+					</div>
+					<div class="title">
+						<b>保存</b>
+						<b onclick="layer.close(Daochu) ">取消</b>
+					</div>
+				</div>
+				<div class="cueLayer fenzujump renwujump renwufenzujump" id="renwufenzujump">
+					<div>
+						<h4>任务分组情况</h4>
+						<p class="list">
+							任务名称：<span>XXXXX</span>
+						</p>
+						<p class="list">
+							开始日期：<span>2018-01-01</span> 结束日期：<span>2018-01-01</span> 任务类型：<span>评审</span>
+						</p>
+						<p class="list">
+							评审形式：<span>网络</span> 组织单位：<span>单位一</span> 
+						</p>
+						<div class="hr">
+							<p>
+								<span>评审分组列表</span> <i></i>
+							</p>
+							<table class="projectlist" border="1">
+								<tbody>
+									<tr>
+										<th>序号</th>
+										<th>评审分组</th>
+										<th>已选项目</th>
+										<th>已选专家</th>
+										<th>负责人</th>
+										<th>处室</th>
+										<th>状态</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>评审一组</td>
+										<td>2</td>
+										<td>2</td>
+										<td>高峰</td>
+										<td>处室一</td>
+										<td><em class="yes">已确认</em></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>评审二组</td>
+										<td>1</td>
+										<td>1</td>
+										<td>马云</td>
+										<td>处室二</td>
+										<td><em class="not">未确认</em></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 				<script src="lib/layui/layui.js" type="text/javascript"></script>
@@ -539,6 +696,9 @@
 					var Newps;
 					var Dellayer;
 					var fenzujump;
+					var renwujump;
+					var Daochu;
+					var renwufenzujump;
 					$(function() {
 						//新建评审弹窗
 						$("#addps").on("click", function() {
@@ -576,7 +736,42 @@
 								content: $("#fenzujump")
 							});
 						})
-
+						//任务确认弹窗
+						$("#addrenwu").on("click", function() {
+							renwujump = layer.open({
+								type: 1,
+								title: false,
+								closeBtn: 0,
+								area: ["600px", "380px"],
+								shadeClose: true,
+								skin: 'yourclass',
+								content: $("#renwujump")
+							});
+						})
+						//导出专家名单
+						$("#adddaochu").on("click", function() {
+							Daochu = layer.open({
+								type: 1,
+								title: false,
+								closeBtn: 0,
+								area: ["400px", "252px"],
+								shadeClose: true,
+								skin: 'yourclass',
+								content: $("#Daochu")
+							});
+						})
+						//任务分组弹窗
+						$(".projectlist td.link").on("click", function() {
+							renwujump = layer.open({
+								type: 1,
+								title: false,
+								closeBtn: 0,
+								area: ["600px", "260px"],
+								shadeClose: true,
+								skin: 'yourclass',
+								content: $("#renwufenzujump")
+							});
+						})
 					})
 					layui.use('laypage', function() {
 						var laypage = layui.laypage;

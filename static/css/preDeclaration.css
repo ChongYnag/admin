@@ -599,3 +599,67 @@ color: #333333;
 }
 
 .fenzujump table,.fenzujump table tr th, .fenzujump table tr td { border:1px solid #e6e6e6; }
+
+.renwujump p.list{
+	text-align: left;
+	padding-left: 20px;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.renwujump p.list span{
+	display: inline-block;
+	width: 100px;
+	margin-right: 20px;
+}
+.renwujump p.list span.final{
+	margin-right: 0;
+}
+.renwujump ul li span{
+	margin-right: 0;
+}
+.renwujump ul li{
+	margin-right: 31px;
+}
+.renwujump ul li input[type="text"]{
+	width: 88px;
+	
+}
+.renwujump > div div.select{
+	width: 88px;
+}
+.renwujump ul li.two{
+	margin-right: 18px;
+}
+.renwujump ul li.final{
+	margin-right: 0;
+}
+.Daochu div p{
+	text-align: left;
+	padding-left: 20px;
+}
+.Daochu ul{
+	padding-left: 20px;
+	margin-top: 15px;
+	overflow: hidden;
+}
+.Daochu ul li{
+	margin: 0;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+.Daochu div.title{
+	padding-top: 10px;
+}
+.projectlist td.link{
+	cursor: pointer;
+}
+.renwufenzujump div{
+	padding-top: 10px;
+}
+.renwufenzujump h4{
+	text-align: left;
+	padding-left: 20px;
+	font-size: 16px;
+	color: #0182e5;
+	margin-bottom: 10px;
+}
