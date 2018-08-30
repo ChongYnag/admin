@@ -676,6 +676,18 @@
 								content: $("#renwujump")
 							});
 						})
+						//分组确认
+						$("#fenzuqueren").on("click", function() {
+							Daochu = layer.open({
+								type: 1,
+								title: false,
+								closeBtn: 0,
+								area: ["302px", "225px"],
+								shadeClose: true,
+								skin: 'yourclass',
+								content: $("#Daochu")
+							});
+						})
 						//已选专家 弹窗
 						$(".specoalList .projectlist tr td.linkzhuanjia").on("click", function() {
 							renwujump = layer.open({
