@@ -1,0 +1,815 @@
+<!doctype html>
+<html>
+	<!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+
+	<head>
+		<meta charset="utf-8">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>admin</title>
+		<!-- InstanceEndEditable -->
+		<link href="static/css/comm.css" rel="stylesheet" type="text/css" />
+		<link href="static/css/template.css" rel="stylesheet" type="text/css" />
+		<script src="lib/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+		<script src="lib/layer/2.4/layer.js" type="text/javascript"></script>
+		<!--上面是模板页内容不可动-->
+		<!-- InstanceBeginEditable name="head" -->
+		<link href="lib/layui/css/layui.css" rel="stylesheet" type="text/css">
+		<link href="static/css/preAssessment.css" rel="stylesheet" type="text/css">
+		<!-- InstanceEndEditable -->
+		<!--下面是模板页内容不可动-->
+	</head>
+
+	<body>
+		<div class="header">
+			<a class="logo" href="javascript:"><img src="static/images/logo.png" alt="" /></a>
+			<div class="nav">
+				<a href="javascript:">首页<i></i></a>
+				<a href="javascript:" class="light">专项管理<i></i></a>
+				<a href="javascript:">项目管理<i></i></a>
+				<a href="javascript:">成果管理<i></i></a>
+				<a href="javascript:">数据服务<i></i></a>
+				<a href="javascript:">系统设置<i></i></a>
+			</div>
+			<div class="user">
+				<p>
+					<img src="static/images/head.png" alt="">
+					<span>孟小玲 XX部门</span>
+				</p>
+				<div>
+					<a href="javascript:"><img src="static/images/user.png" alt="" />个人设置</a>
+					<a href="javascript:"><img src="static/images/help.png" alt="" />帮助</a>
+					<a href="javascript:"><img src="static/images/quit.png" alt="" />退出</a>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="leftMenu">
+				<h5>专项名称专项名称...</h5>
+				<div class="light">
+					<h3><img src="static/images/leftMenuIconPre1.png" alt="" />预申报<i>16</i></h3>
+					<ul>
+						<li>形式审查</li>
+						<li class="hover">预申报评审</li>
+					</ul>
+				</div>
+				<div>
+					<h3><img src="static/images/leftMenuIconPre2.png" alt="" />正式申报<i>20</i></h3>
+					<ul>
+						<li>专项信息</li>
+						<li>专项指南</li>
+						<li>专项流程</li>
+						<li>专项项目</li>
+					</ul>
+				</div>
+				<div>
+					<h3><img src="static/images/leftMenuIconPre3.png" alt="" />项目立项<i>5</i></h3>
+					<ul>
+						<li>专项信息</li>
+						<li>专项指南</li>
+						<li>专项流程</li>
+						<li>专项项目</li>
+					</ul>
+				</div>
+				<div>
+					<h3><img src="static/images/leftMenuIconPre4.png" alt="" />过程管理<i>5</i></h3>
+					<ul>
+						<li>专项信息</li>
+						<li>专项指南</li>
+						<li>专项流程</li>
+						<li>专项项目</li>
+					</ul>
+				</div>
+				<div>
+					<h3><img src="static/images/leftMenuIconPre5.png" alt="" />项目验收<i>5</i></h3>
+					<ul>
+						<li>专项信息</li>
+						<li>专项指南</li>
+						<li>专项流程</li>
+						<li>专项项目</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="region">
+				<!--上面是模板页内容不可动-->
+				<!-- InstanceBeginEditable name="home" -->
+				<div class="switch">
+					<a class="light" href="preDeclaration.html">预申报评审</a>
+				</div>
+				<div class="wrapup">
+					<form action="" method="post">
+						<div class="inputbox">
+							<div>
+								<span>任务名称</span>
+								<input class="light" type="text" value="YS2018YFB01011" />
+							</div>
+							<div id="short">
+								<span>任务周期</span>
+								<input type="text" value="" />
+								<input class="disabled" value="至" disabled="disabled" />
+								<input type="text" value="" />
+							</div>
+							<div>
+								<span>申报年度</span>
+								<input type="text" value="" />
+							</div>
+							<input class="reset" type="reset" value="" />
+							<input class="query" type="submit" value="" />
+							<div class="b">
+								高级搜索
+								<!--<ul>
+							<li>搜索1</li>
+							<li>搜索2</li>
+						</ul>-->
+							</div>
+						</div>
+						<br/>
+						<div class="inputbox">
+							<div>
+								<span>会议形式</span>
+								<div class="select">
+									<select>
+										<option>会议形式</option>
+										<option>会议形式</option>
+										<option>会议形式</option>
+									</select>
+								</div>
+							</div>
+							<div>
+								<span>组织单位</span>
+								<div class="select">
+									<select>
+										<option>组织单位</option>
+										<option>组织单位</option>
+										<option>组织单位</option>
+									</select>
+								</div>
+							</div>
+							<div>
+								<span>任务类型</span>
+								<div class="select">
+									<select>
+										<option>全部</option>
+										<option>全部</option>
+										<option>全部</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<br />
+						<div class="inputbox">
+							<div>
+								<span>任务状态</span>
+								<div class="select">
+									<select>
+										<option>待确认</option>
+										<option>待确认</option>
+										<option>待确认</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</form>
+					<br/>
+					<div class="operation">
+						<div class="select">
+
+							<div>
+								<select name="">
+									<option value="">2018年度</option>
+									<option value="">2018年度</option>
+									<option value="">2018年度</option>
+								</select>
+
+							</div>
+							<img src="static/images/arrow.png" alt="" />
+						</div>
+						<!--<div id="addps" class="btn">
+							<img src="static/images/iconnew.png" alt="" /> 新建评审任务
+						</div>
+						<div id="delps" class="btn">
+							<img src="static/images/icondelete.png" alt="" /> 删除评审任务
+						</div>
+						<div id="addfenzu" class="btn">
+							<img style="top:0px;" src="static/images/iconfenzu.png" alt="" /> 分组授权
+						</div>
+						<div id="addrenwu" class="btn">
+							<img style="top:-1px;" src="static/images/iconqueren.png" alt="" /> 任务确认
+						</div>-->
+						<div id="adddaochu" class="btn">
+							<img style="top:-1px;" src="static/images/icondaochu.png" alt="" /> 导出专家名单
+						</div>
+					</div>
+					<br>
+					<table class="projectlist" border="1">
+						<tbody>
+							<tr>
+								<th width="30px"><input type="checkbox" name="" id="" value="" /></th>
+								<th>序号 </th>
+								<th>任务名称</th>
+								<th>开始日期</th>
+								<th>结束日期</th>
+								<th>评审分组数</th>
+								<th>组织单位</th>
+								<th>任务类型</th>
+								<th>形审形式</th>
+								<th>
+									<div class="accredit">
+										<h3>任务状态</h3>
+										<ul>
+											<li>已确认</li>
+											<li>未确认</li>
+										</ul>
+									</div>
+								</th>
+								<th>创建日期</th>
+								<th>操作</th>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" id="" value="" /></td>
+								<td>01</td>
+								<td>
+									<font color="#0182e5">XX专项1</font>
+								</td>
+								<td>2018-02-01</td>
+								<td>2018-12-08</td>
+								<td class="link"><font color="#0182e5">1</font></td>
+								<td>XX机构</td>
+								<td>评审</td>
+								<td>网络</td>
+								<td><em class="yes">已确认</em></td>
+								<td>2018-02-01</td>
+								<td>
+									<!--<i class="delete2"></i>
+									<i class="fenzu"></i>
+									<i class="queren"></i>-->
+									<i class="daochu"></i>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" id="" value="" /></td>
+								<td>01</td>
+								<td>
+									<font color="#0182e5">XX专项1</font>
+								</td>
+								<td>2018-02-01</td>
+								<td>2018-12-08</td>
+								<td class="link"><font color="#0182e5">1</font></td>
+								<td>XX机构</td>
+								<td>评审</td>
+								<td>网络</td>
+								<td><em class="yes">已确认</em></td>
+								<td>2018-02-01</td>
+								<td>
+									<!--<i class="delete2"></i>
+									<i class="fenzu"></i>
+									<i class="queren"></i>-->
+									<i class="daochu"></i>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" id="" value="" /></td>
+								<td>01</td>
+								<td>
+									<font color="#0182e5">XX专项1</font>
+								</td>
+								<td>2018-02-01</td>
+								<td>2018-12-08</td>
+								<td class="link"><font color="#0182e5">1</font></td>
+								<td>XX机构</td>
+								<td>评审</td>
+								<td>网络</td>
+								<td><em class="not">未确认</em></td>
+								<td>2018-02-01</td>
+								<td>
+									<!--<i class="delete2"></i>
+									<i class="fenzu"></i>
+									<i class="queren"></i>-->
+									<i class="daochu"></i>
+								</td>
+							</tr>
+							<tr class="pitchon">
+								<td><input type="checkbox" name="" id="" value="" /></td>
+								<td>01</td>
+								<td>
+									<font color="#0182e5">XX专项1</font>
+								</td>
+								<td>2018-02-01</td>
+								<td>2018-12-08</td>
+								<td class="link"><font color="#0182e5">1</font></td>
+								<td>XX机构</td>
+								<td>评审</td>
+								<td>网络</td>
+								<td><em class="yes">已确认</em></td>
+								<td>2018-02-01</td>
+								<td>
+									<!--<i class="delete2"></i>
+									<i class="fenzu"></i>
+									<i class="queren"></i>-->
+									<i class="daochu"></i>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" id="" value="" /></td>
+								<td>01</td>
+								<td>
+									<font color="#0182e5">XX专项1</font>
+								</td>
+								<td>2018-02-01</td>
+								<td>2018-12-08</td>
+								<td class="link"><font color="#0182e5">1</font></td>
+								<td>XX机构</td>
+								<td>评审</td>
+								<td>网络</td>
+								<td><em class="yes">已确认</em></td>
+								<td>2018-02-01</td>
+								<td>
+									<!--<i class="delete2"></i>
+									<i class="fenzu"></i>
+									<i class="queren"></i>-->
+									<i class="daochu"></i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div id="paging"></div>
+
+				</div>
+
+				<div class="cueLayer" id="Dellayer">
+					<h3><span>删除评审任务</span><b  onclick="layer.close(Dellayer) "></b></h3>
+					<div>
+						<img src="static/images/delTitleIcon.png" alt="" />
+						<p>是否删除评审任务及其评审分组？</p>
+					</div>
+					<div class="title">
+						<b>确认</b>
+						<b onclick="layer.close(Dellayer) ">取消</b>
+					</div>
+				</div>
+
+				<div class="cueLayer" id="Newps">
+					<h3><span>新建评审任务</span><b onclick="layer.close(Newps) "></b></h3>
+					<div>
+						<ul>
+							<li>
+								<span>申报年度</span>
+								<div class="select">
+									<select>
+										<option>2018</option>
+										<option>2018</option>
+										<option>2018</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<span>评审阶段</span>
+								<div class="select">
+									<select>
+										<option>评审阶段</option>
+										<option>评审阶段</option>
+										<option>评审阶段</option>
+									</select>
+								</div>
+							</li>
+							<li class="name">
+								<span>任务名称</span>
+								<input type="text" name="" id="" value="" />
+								<p>* 一次评审工作请务必创建一个评审任务，不要创建多个评审任务</p>
+							</li>
+							<li>
+								<span>任务类型</span>
+								<div class="select">
+									<select>
+										<option>评审</option>
+										<option>评审</option>
+										<option>评审</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<span>评审形式</span>
+								<div class="select">
+									<select>
+										<option>会议</option>
+										<option>会议</option>
+										<option>会议</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<span>开始日期</span>
+								<input type="text" name="" id="" value="2018-08-08" />
+							</li>
+							<li>
+								<span>结束日期</span>
+								<input type="text" name="" id="" value="2018-08-08" />
+							</li>
+							<li>
+								<span>组织单位</span>
+								<div class="select">
+									<select>
+										<option>单位</option>
+										<option>单位</option>
+										<option>单位</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<span>相关处室</span>
+								<div class="select">
+									<select>
+										<option>处室1</option>
+										<option>处室1</option>
+										<option>处室1</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<span>创建人</span>
+								<input type="text" name="" id="" value="" />
+							</li>
+							<li>
+								<span>创建日期</span>
+								<input type="text" name="" id="" value="2018-08-03" />
+							</li>
+							<li class="check-box">
+								<input type="checkbox" /> 是否创建评审分组
+							</li>
+							<li class="num">
+								<span>评审分租数</span>
+								<div class="select">
+									<select>
+										<option>2</option>
+										<option>2</option>
+										<option>2</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="title">
+						<b>保存</b>
+						<b onclick="layer.close(Newps) ">取消</b>
+					</div>
+				</div>
+
+				<div class="cueLayer fenzujump" id="fenzujump">
+					<h3><span>任务分组授权</span><b onclick="layer.close(fenzujump) "></b></h3>
+					<div>
+						<ul>
+							<li class="renwuName">
+								<span>任务名称</span>
+								<input type="text" name="" id="" value="XXXXXXXX" readonly="readonly" />
+							</li>
+							<li>
+								<span>选择授权人处室</span>
+								<div class="select">
+									<select>
+										<option>选择授权人处室</option>
+										<option>选择授权人处室</option>
+										<option>选择授权人处室</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<span>评审分组</span>
+								<div class="select">
+									<select>
+										<option>评审一组</option>
+										<option>评审分组</option>
+										<option>评审分组</option>
+									</select>
+								</div>
+							</li>
+							<li>
+								<span>选择授权人姓名</span>
+								<div class="select">
+									<select>
+										<option>评审</option>
+										<option>评审</option>
+										<option>评审</option>
+									</select>
+								</div>
+							</li>
+							<li class="a">
+								<span>添加</span>
+							</li>
+						</ul>
+						<div class="hr">
+							<p>
+								<span>评审分组列表</span> <i></i>
+							</p>
+							<table class="projectlist" border="1">
+								<tbody>
+									<tr>
+										<th>序号 </th>
+										<th>评审分组</th>
+										<th>负责人</th>
+										<th>处室</th>
+										<th>状态</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>评审一组</td>
+										<td>高峰</td>
+										<td>处室一</td>
+										<td><em class="yes">已确认</em></td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>评审一组</td>
+										<td>高峰</td>
+										<td>处室一</td>
+										<td><em class="not">未确认</em></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="title">
+						<b>保存</b>
+						<b onclick="layer.close(fenzujump) ">取消</b>
+					</div>
+				</div>
+				<div class="cueLayer fenzujump renwujump" id="renwujump">
+					<h3><span>评审任务确认</span><b onclick="layer.close(renwujump) "></b></h3>
+					<div>
+						<p class="list">
+							任务名称：<span>XXXXX</span>
+						</p>
+						<p class="list">
+							开始日期：<span>2018-01-01</span> 结束日期：<span>2018-01-01</span> 任务类型：<span>评审</span>
+						</p>
+						<p class="list">
+							评审形式：<span>网络</span> 组织单位：<span>单位一</span> 
+						</p>
+						<ul>
+							<li>
+								<span>确认日期：</span>
+								<input type="text" name="" id="" value="" />
+							</li>
+							<li class="two">
+								<span>确认人：</span>
+								<input type="text" name="" id="" value="" />
+							</li>
+							<li class="final">
+								<span>任务状态：</span>
+								<div class="select">
+									<select>
+										<option>已确认</option>
+										<option>已确认</option>
+										<option>已确认</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+						<div class="hr">
+							<p>
+								<span>评审分组列表</span> <i></i>
+							</p>
+							<table class="projectlist" border="1">
+								<tbody>
+									<tr>
+										<th>序号</th>
+										<th>评审分组</th>
+										<th>已选项目</th>
+										<th>已选专家</th>
+										<th>负责人</th>
+										<th>处室</th>
+										<th>状态</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>评审一组</td>
+										<td>2</td>
+										<td>2</td>
+										<td>高峰</td>
+										<td>处室一</td>
+										<td><em class="yes">已确认</em></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>评审二组</td>
+										<td>1</td>
+										<td>1</td>
+										<td>马云</td>
+										<td>处室二</td>
+										<td><em class="not">未确认</em></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="title">
+						<b>保存</b>
+						<b onclick="layer.close(renwujump) ">取消</b>
+					</div>
+				</div>
+				<div class="cueLayer Daochu" id="Daochu">
+					<h3><span>导出专家名单</span><b  onclick="layer.close(Daochu) "></b></h3>
+					<div>
+						<p>请选择需要导出的专家名单字段</p>
+						<ul>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> 专家姓名
+							</li>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> 单位
+							</li>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> 职称
+							</li>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> 职务
+							</li>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> 评审分组
+							</li>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> 评审任务
+							</li>
+							<li>
+								<input type="checkbox" name="" id="" value="" /> e_mail
+							</li>
+						</ul>
+					</div>
+					<div class="title">
+						<b>保存</b>
+						<b onclick="layer.close(Daochu) ">取消</b>
+					</div>
+				</div>
+				<div class="cueLayer fenzujump renwujump renwufenzujump" id="renwufenzujump">
+					<div>
+						<h4>任务分组情况</h4>
+						<p class="list">
+							任务名称：<span>XXXXX</span>
+						</p>
+						<p class="list">
+							开始日期：<span>2018-01-01</span> 结束日期：<span>2018-01-01</span> 任务类型：<span>评审</span>
+						</p>
+						<p class="list">
+							评审形式：<span>网络</span> 组织单位：<span>单位一</span> 
+						</p>
+						<div class="hr">
+							<p>
+								<span>评审分组列表</span> <i></i>
+							</p>
+							<table class="projectlist" border="1">
+								<tbody>
+									<tr>
+										<th>序号</th>
+										<th>评审分组</th>
+										<th>已选项目</th>
+										<th>已选专家</th>
+										<th>负责人</th>
+										<th>处室</th>
+										<th>状态</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>评审一组</td>
+										<td>2</td>
+										<td>2</td>
+										<td>高峰</td>
+										<td>处室一</td>
+										<td><em class="yes">已确认</em></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>评审二组</td>
+										<td>1</td>
+										<td>1</td>
+										<td>马云</td>
+										<td>处室二</td>
+										<td><em class="not">未确认</em></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<script src="lib/layui/layui.js" type="text/javascript"></script>
+				<script type="text/javascript">
+					var Newps;
+					var Dellayer;
+					var fenzujump;
+					var renwujump;
+					var Daochu;
+					var renwufenzujump;
+					$(function() {
+						//新建评审弹窗
+						$("#addps").on("click", function() {
+							Newps = layer.open({
+								type: 1,
+								title: false,
+								closeBtn: 0,
+								area: ["600px", "470px"],
+								shadeClose: false,
+								skin: 'yourclass',
+								content: $("#Newps")
+							});
+						})
+						//打开删除评审弹窗
+						$("#delps").on("click", function() {
+							Dellayer = layer.open({
+								type: 1,
+								title: false,
+								closeBtn: 0,
+								area: ["302px", "225px"],
+								shadeClose: true,
+								skin: 'yourclass',
+								content: $("#Dellayer")
+							});
+						})
+						//分组授权弹窗
+						$("#addfenzu").on("click", function() {
+							fenzujump = layer.open({
+								type: 1,
+								title: false,
+								closeBtn: 0,
+								area: ["600px", "370px"],
+								shadeClose: true,
+								skin: 'yourclass',
+								content: $("#fenzujump")
+							});
+						})
+						//任务确认弹窗
+						$("#addrenwu").on("click", function() {
+							renwujump = layer.open({
+								type: 1,
+								title: false,
+								closeBtn: 0,
+								area: ["600px", "380px"],
+								shadeClose: true,
+								skin: 'yourclass',
+								content: $("#renwujump")
+							});
+						})
+						//导出专家名单
+						$("#adddaochu").on("click", function() {
+							Daochu = layer.open({
+								type: 1,
+								title: false,
+								closeBtn: 0,
+								area: ["400px", "252px"],
+								shadeClose: true,
+								skin: 'yourclass',
+								content: $("#Daochu")
+							});
+						})
+						//任务分组弹窗
+						$(".projectlist td.link").on("click", function() {
+							renwujump = layer.open({
+								type: 1,
+								title: false,
+								closeBtn: 0,
+								area: ["600px", "260px"],
+								shadeClose: true,
+								skin: 'yourclass',
+								content: $("#renwufenzujump")
+							});
+						})
+					})
+					layui.use('laypage', function() {
+						var laypage = layui.laypage;
+						laypage.render({
+							elem: 'paging',
+							count: 100,
+							theme: '#3299e8'
+						});
+					})
+				</script>
+				<!-- InstanceEndEditable -->
+				<!--下面是模板页内容不可动-->
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				$(document).bind('click', function() {
+					$(".user div").fadeOut(100)
+				});
+				$(".user").bind('click', function(e) {
+					$(".user div").fadeIn(100)
+					stopPropagation(e); //调用停止冒泡方法,阻止document方法的执行
+				});
+				$(".main").height($(window).height() - 60)
+
+				$(".leftMenu div").on("click", function() {
+					$(this).addClass("light").siblings().removeClass("light")
+				})
+			})
+
+			function stopPropagation(e) {
+				if(e.stopPropagation)
+					e.stopPropagation(); //停止冒泡  非ie
+				else
+					e.cancelBubble = true; //停止冒泡 ie
+			}
+		</script>
+	</body>
+	<!-- InstanceEnd -->
+
+</html>

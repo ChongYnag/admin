@@ -259,7 +259,25 @@
 
 
 
-
+.header > div.nav ul{
+	position: absolute;
+	top:60px;
+	left: 20px;
+	z-index: 99999;
+	display: none;
+}
+.header > div.nav a ul li{
+	width: 100px;
+	background: #e6e6e6;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	color: #333333;
+}
+.header > div.nav ul li:hover{
+	background: #0182e5;
+	color: #FFFFFF;
+}
 
 
 

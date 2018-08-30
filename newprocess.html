@@ -26,7 +26,13 @@
 			<div class="nav">
 				<a href="javascript:">首页<i></i></a>
 				<a href="javascript:">专项管理<i></i></a>
-				<a href="javascript:">项目管理<i></i></a>
+				<a class="list" href="javascript:">项目管理<i></i>
+					<ul>
+						<li>专项1</li>
+						<li>专项2</li>
+						<li>专项3</li>
+					</ul>
+				</a>
 				<a href="javascript:">成果管理<i></i></a>
 				<a href="javascript:">数据服务<i></i></a>
 				<a href="javascript:" class="light">系统设置<i></i></a>
@@ -307,6 +313,13 @@
 				var behavioral;
 				var Configuration;
 				$(function() {
+					//导航条顶部下拉菜单
+						$(".header > div.nav a.list").on("mousemove", function() {
+							$(".header > div.nav ul").css("display", "block");
+						})
+						$(".header > div.nav a.list").on("mouseleave", function() {
+							$(".header > div.nav ul").css("display", "none");
+						})
 					behavioral = layer.open({
 						type: 1,
 						title: false,
