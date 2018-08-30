@@ -875,3 +875,87 @@
 .wrapup h4{
 	font-size: 12px;
 }
+#main—box a.btn{
+	display: inline-block;
+	background: #0077E1;
+	color: #FFFFFF;
+	font-size: 12px;
+	padding: 3px 8px;
+	height: 20px ;
+	line-height: 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	
+}
+#Newps p{
+	text-align: left;
+	padding-left: 30px;
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+#Newps ul{
+	overflow: hidden;
+}
+#Newps ul li span{
+	width: auto;
+}
+#Newps ul li{
+	margin: 0;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+#Newps div.title{
+	padding-top: 20px;
+}
+#Dellayer p,#fenzujump p{
+	text-align: left;
+	padding-left: 30px;
+	font-size: 12px;
+}
+#Dellayer table,#fenzujump table{
+	width: 836px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+#Dellayer table tr,#Dellayer table td,#fenzujump table tr,#fenzujump table td{
+	border: 1px solid #DEDEDE;
+}
+#Dellayer table td.first,#fenzujump table td.first{
+	background: #F5F5F5;
+	text-align: center;
+}
+#Dellayer table td,#fenzujump table td{
+	text-align: left;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	font-size: 12px;
+}
+#Dellayer table td span,#fenzujump table td span{
+	color: #EE7361;
+}
+#Dellayer table td input[type="text"],#fenzujump table td input[type="text"]{
+	width: 500px;
+	height: 20px;
+	border: 1px solid #DEDEDE;
+}
+#Dellayer table td input[type="number"]{
+	width: 66px;
+	height: 20px;
+	border: 1px solid #DEDEDE;
+}
+#Dellayer table td ul{
+	float: right;
+	width: 680px;
+}
+#Dellayer table td ul li{
+	margin: 0;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+#Dellayer table td ul li input{
+	margin-right: 5px;
+}
+#Dellayer .title b{
+	width: auto;
+}

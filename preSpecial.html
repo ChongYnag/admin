@@ -122,16 +122,16 @@
 										<a style="color: #FFFFFF;" href="specialSubgroup.html">项目分组</a>
 										
 									</div>
-									<div id="delps" class="btn">
+									<div id="quxiaoproject" class="btn">
 										项目取消
 									</div>
-									<div id="addfenzu" class="btn">
-										专家分组
+									<div class="btn">
+										<a style="color: #FFFFFF;" href="expertGroup.html">专家分组</a>
 									</div>
-									<div id="addrenwu" class="btn">
+									<div id="quxiaozhuanjia" class="btn">
 										专家取消
 									</div>
-									<div id="adddaochu" class="btn">
+									<div id="fenzuqueren" class="btn">
 										分组确认
 									</div>
 									<div class="btn">
@@ -274,10 +274,10 @@
 				</div>
 
 				<div class="cueLayer" id="Dellayer">
-					<h3><span>删除评审任务</span><b  onclick="layer.close(Dellayer) "></b></h3>
+					<h3><span>项目取消</span><b  onclick="layer.close(Dellayer) "></b></h3>
 					<div>
 						<img src="static/images/delTitleIcon.png" alt="" />
-						<p>是否删除评审任务及其评审分组？</p>
+						<p>是否释放当前分组所有项目？</p>
 					</div>
 					<div class="title">
 						<b>确认</b>
@@ -390,186 +390,23 @@
 						<b onclick="layer.close(Newps) ">取消</b>
 					</div>
 				</div>
-
-				<div class="cueLayer fenzujump" id="fenzujump">
-					<h3><span>任务分组授权</span><b onclick="layer.close(fenzujump) "></b></h3>
+				<div class="cueLayer" id="renwujump">
+					<h3><span>专家取消</span><b onclick="layer.close(renwujump)"></b></h3>
 					<div>
-						<ul>
-							<li class="renwuName">
-								<span>任务名称</span>
-								<input type="text" name="" id="" value="XXXXXXXX" readonly="readonly" />
-							</li>
-							<li>
-								<span>选择授权人处室</span>
-								<div class="select">
-									<select>
-										<option>选择授权人处室</option>
-										<option>选择授权人处室</option>
-										<option>选择授权人处室</option>
-									</select>
-								</div>
-							</li>
-							<li>
-								<span>评审分组</span>
-								<div class="select">
-									<select>
-										<option>评审一组</option>
-										<option>评审分组</option>
-										<option>评审分组</option>
-									</select>
-								</div>
-							</li>
-							<li>
-								<span>选择授权人姓名</span>
-								<div class="select">
-									<select>
-										<option>评审</option>
-										<option>评审</option>
-										<option>评审</option>
-									</select>
-								</div>
-							</li>
-							<li class="a">
-								<span>添加</span>
-							</li>
-						</ul>
-						<div class="hr">
-							<p>
-								<span>评审分组列表</span> <i></i>
-							</p>
-							<table class="projectlist" border="1">
-								<tbody>
-									<tr>
-										<th>序号 </th>
-										<th>评审分组</th>
-										<th>负责人</th>
-										<th>处室</th>
-										<th>状态</th>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>评审一组</td>
-										<td>高峰</td>
-										<td>处室一</td>
-										<td><em class="yes">已确认</em></td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>评审一组</td>
-										<td>高峰</td>
-										<td>处室一</td>
-										<td><em class="not">未确认</em></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+						<img src="static/images/delTitleIcon.png" alt="" />
+						<p>是否释放当前分组所有专家？</p>
 					</div>
 					<div class="title">
-						<b>保存</b>
-						<b onclick="layer.close(fenzujump) ">取消</b>
-					</div>
-				</div>
-				<div class="cueLayer fenzujump renwujump" id="renwujump">
-					<h3><span>评审任务确认</span><b onclick="layer.close(renwujump) "></b></h3>
-					<div>
-						<p class="list">
-							任务名称：<span>XXXXX</span>
-						</p>
-						<p class="list">
-							开始日期：<span>2018-01-01</span> 结束日期：<span>2018-01-01</span> 任务类型：<span>评审</span>
-						</p>
-						<p class="list">
-							评审形式：<span>网络</span> 组织单位：<span>单位一</span>
-						</p>
-						<ul>
-							<li>
-								<span>确认日期：</span>
-								<input type="text" name="" id="" value="" />
-							</li>
-							<li class="two">
-								<span>确认人：</span>
-								<input type="text" name="" id="" value="" />
-							</li>
-							<li class="final">
-								<span>任务状态：</span>
-								<div class="select">
-									<select>
-										<option>已确认</option>
-										<option>已确认</option>
-										<option>已确认</option>
-									</select>
-								</div>
-							</li>
-						</ul>
-						<div class="hr">
-							<p>
-								<span>评审分组列表</span> <i></i>
-							</p>
-							<table class="projectlist" border="1">
-								<tbody>
-									<tr>
-										<th>序号</th>
-										<th>评审分组</th>
-										<th>已选项目</th>
-										<th>已选专家</th>
-										<th>负责人</th>
-										<th>处室</th>
-										<th>状态</th>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>评审一组</td>
-										<td>2</td>
-										<td>2</td>
-										<td>高峰</td>
-										<td>处室一</td>
-										<td><em class="yes">已确认</em></td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td>评审二组</td>
-										<td>1</td>
-										<td>1</td>
-										<td>马云</td>
-										<td>处室二</td>
-										<td><em class="not">未确认</em></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<div class="title">
-						<b>保存</b>
+						<b>确认</b>
 						<b onclick="layer.close(renwujump) ">取消</b>
 					</div>
 				</div>
 				<div class="cueLayer Daochu" id="Daochu">
 					<h3><span>导出专家名单</span><b  onclick="layer.close(Daochu) "></b></h3>
 					<div>
-						<p>请选择需要导出的专家名单字段</p>
-						<ul>
-							<li>
-								<input type="checkbox" name="" id="" value="" /> 专家姓名
-							</li>
-							<li>
-								<input type="checkbox" name="" id="" value="" /> 单位
-							</li>
-							<li>
-								<input type="checkbox" name="" id="" value="" /> 职称
-							</li>
-							<li>
-								<input type="checkbox" name="" id="" value="" /> 职务
-							</li>
-							<li>
-								<input type="checkbox" name="" id="" value="" /> 评审分组
-							</li>
-							<li>
-								<input type="checkbox" name="" id="" value="" /> 评审任务
-							</li>
-							<li>
-								<input type="checkbox" name="" id="" value="" /> e_mail
-							</li>
-						</ul>
+						<img src="static/images/delTitleIcon.png" alt="" />
+						<p>分组确认后将无法修改项目和专家，</p>
+						<p>确定要对分组“评审一组”进行分组确认吗？</p>
 					</div>
 					<div class="title">
 						<b>保存</b>
@@ -815,8 +652,8 @@
 								content: $("#Newps")
 							});
 						})
-						//打开删除评审弹窗
-						$("#delps").on("click", function() {
+						//项目取消
+						$("#quxiaoproject").on("click", function() {
 							Dellayer = layer.open({
 								type: 1,
 								title: false,
@@ -827,40 +664,16 @@
 								content: $("#Dellayer")
 							});
 						})
-						//分组授权弹窗
-						$("#addfenzu").on("click", function() {
-							fenzujump = layer.open({
-								type: 1,
-								title: false,
-								closeBtn: 0,
-								area: ["600px", "370px"],
-								shadeClose: true,
-								skin: 'yourclass',
-								content: $("#fenzujump")
-							});
-						})
-						//任务确认弹窗
-						$("#addrenwu").on("click", function() {
+						//取消专家弹窗
+						$("#quxiaozhuanjia").on("click", function() {
 							renwujump = layer.open({
 								type: 1,
 								title: false,
 								closeBtn: 0,
-								area: ["600px", "380px"],
+								area: ["302px", "225px"],
 								shadeClose: true,
 								skin: 'yourclass',
 								content: $("#renwujump")
-							});
-						})
-						//导出专家名单
-						$("#adddaochu").on("click", function() {
-							Daochu = layer.open({
-								type: 1,
-								title: false,
-								closeBtn: 0,
-								area: ["400px", "252px"],
-								shadeClose: true,
-								skin: 'yourclass',
-								content: $("#Daochu")
 							});
 						})
 						//已选专家 弹窗

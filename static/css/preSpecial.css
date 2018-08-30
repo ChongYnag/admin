@@ -413,7 +413,6 @@ color: #333333;
 .cueLayer div img{
 	margin-bottom: 11px;
 }
-
 #short input{
 	width: 80px;
 }
@@ -634,7 +633,7 @@ color: #333333;
 	margin-right: 0;
 }
 .Daochu div p{
-	text-align: left;
+	text-align: center;
 	padding-left: 20px;
 }
 .Daochu ul{
