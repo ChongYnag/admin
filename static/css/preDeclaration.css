@@ -446,11 +446,12 @@ cursor: pointer;
 }
 .cueLayer ul{
 	/*padding: 0 25px;*/
+	overflow: hidden;
 }
 .cueLayer ul li{
 	float: left;
 	line-height: 30px;
-	margin: 0 30px;
+	margin: 0 25px;
 	margin-bottom: 15px;
 }
 .cueLayer ul li.check-box{
@@ -462,7 +463,7 @@ cursor: pointer;
 	margin-bottom: 20px;
 }
 .cueLayer ul li.name input{
-	width: 470px!important;
+	width: 460px!important;
 	}
 .cueLayer ul li.name p{
 	position: absolute;

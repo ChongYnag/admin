@@ -668,6 +668,7 @@ color: #333333;
 }
 .specoalList p.list span{
 	margin-right: 40px;
+	width:100px;
 }
 .specoalList .hr p{
 	margin-top: 20px;

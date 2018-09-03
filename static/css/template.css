@@ -278,7 +278,19 @@
 	background: #0182e5;
 	color: #FFFFFF;
 }
-
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-modify: read-write-plaintext-only;
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0);
+	-moz-user-modify: read-write-plaintext-only;
+	-ms-tap-highlight-color: rgba(0, 0, 0, 0);
+	-ms-user-modify: read-write-plaintext-only;
+}
 
 
 

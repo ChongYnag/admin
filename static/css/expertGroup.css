@@ -764,6 +764,19 @@
 	width: 300px;
 }
 
+#main—box .list{
+	position: relative;
+}
+#leftPage{
+	position: absolute;
+	bottom: 0px;
+	left: 80px;
+}
+#rightPage{
+	position: absolute;
+	bottom: 0px;
+    left: 325px;
+}
 #main—box .left .list {
 	border: 1px solid #DEDEDE;
 	height: 372px;
