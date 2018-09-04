@@ -639,7 +639,7 @@
 						"fzrxm": "负责人姓名",
 						"id": "14",
 						"sbdw": "承担单位",
-						"slbh": "YS2018YFB01025",
+						"slbh": "YS2018YFB01026",
 						"xmmc": "项目名称",
 						"znfx": "指南方向1",
 					}];
@@ -662,8 +662,6 @@
 						$("#main—box .left .list table tr").not(".header").remove();
 						var str = "",
 							num = 1;
-						//排序
-						arrSort(arr);
 						for(var i = 0; i < arr.length; i++) {
 //							console.log(arr[i])
 							str += "<tr id="+arr[i].id+"><td>" + num + "</td><td>" + arr[i].slbh + "</td><td>" + arr[i].xmmc + "</td></tr>";
@@ -676,8 +674,6 @@
 						$("#main—box .right .list table tr").not(".header").remove();
 						var str = "",
 							num = 1;
-						//排序
-						arrSort(arr);
 						for(var i = 0; i < arr.length; i++) {
 //							console.log(arr[i])
 							str += "<tr id="+arr[i].id+"><td>" + num + "</td><td>" + arr[i].znfx + "</td><td>" + arr[i].slbh + "</td><td>" + arr[i].xmmc + "</td><td>" + arr[i].sbdw + "</td><td>"+arr[i].fzrxm+"</td></tr>";
@@ -703,7 +699,7 @@
 					function delArr(id,arr){
 						for(var i = 0; i < arr.length; i++) {
 							if(id == arr[i].id){
-								arr.splice(arr[i],1);
+								arr.splice(i,1);
 							}
 						}
 					}
@@ -728,9 +724,13 @@
 					$(function() {
 						//初始化左边表格数据
 						var countLeft = Math.ceil(json.length / 10); //获取分页数
+						//先排序再写入
+						arrSort(json);
 						writeLeftList(getJsonPage(0, 10, json)); //初始化第一页的数据
 						//初始化右边边表格数据
 						var countRight = Math.ceil(jsonRight.length / 10); //获取分页数
+						//先排序再写入
+						arrSort(jsonRight);
 						writeRightList(getJsonPage(0, 10, jsonRight)); //初始化第一页的数据
 						//使用分页插件
 						layui.use('laypage', function() {
@@ -772,7 +772,9 @@
 							var html = $("#main—box .left .list table tr.hover");
 							for(var i = 0; i < html.length; i++) {
 								//添加右侧数据
-								var one =getOne($(html[i]).attr("id"),json); 
+								var one =getOne($(html[i]).attr("id"),json);
+								console.log($(html[i]).attr("id"));
+								console.log(one);
 								addArr($(html[i]).attr("id"),jsonRight,one);
 								//删除左侧数据
 								delArr($(html[i]).attr("id"),json);
@@ -780,6 +782,8 @@
 							}
 							//操作完初始左右数据
 							var laypage = layui.laypage;
+							//先排序再写入
+							arrSort(json);
 							writeLeftList(getJsonPage(0, 10, json)); 
 							countLeft = Math.ceil(json.length / 10);
 							laypage.render({
@@ -793,6 +797,8 @@
 									}
 								}
 							});
+							//先排序再写入
+							arrSort(jsonRight);
 							writeRightList(getJsonPage(0, 10, jsonRight)); 
 							countRight = Math.ceil(jsonRight.length / 10);
 							laypage.render({
@@ -814,13 +820,19 @@
 							for(var i = 0; i < html.length; i++) {
 								//添加左侧数据
 								var one =getOne($(html[i]).attr("id"),jsonRight); 
+								console.log($(html[i]).attr("id"));
+								console.log(one);
 								addArr($(html[i]).attr("id"),json,one);
 								//删除右侧数据
 								delArr($(html[i]).attr("id"),jsonRight);
+								console.log(json);
+								console.log(jsonRight);
 								
 							}
 							//操作完初始左右数据
 							var laypage = layui.laypage;
+							//这里要获取所有的数据进行排序之后再按分页去取
+							arrSort(json);
 							writeLeftList(getJsonPage(0, 10, json)); 
 							countLeft = Math.ceil(json.length / 10);
 							laypage.render({
@@ -834,6 +846,8 @@
 									}
 								}
 							});
+							//这里要获取所有的数据进行排序之后再按分页去取
+							arrSort(jsonRight);
 							writeRightList(getJsonPage(0, 10, jsonRight)); 
 							countRight = Math.ceil(jsonRight.length / 10);
 							laypage.render({
@@ -856,6 +870,7 @@
 							for(var i = 0; i < html.length; i++) {
 								//添加右侧数据
 								var one =getOne($(html[i]).attr("id"),json); 
+								console.log(one);
 								addArr($(html[i]).attr("id"),jsonRight,one);
 								//删除左侧数据
 								delArr($(html[i]).attr("id"),json);
@@ -865,6 +880,8 @@
 							console.log(jsonRight);
 							//操作完初始左右数据
 							var laypage = layui.laypage;
+							//这里要获取所有的数据进行排序之后再按分页去取
+							arrSort(json);
 							writeLeftList(getJsonPage(0, 10, json)); 
 							countLeft = Math.ceil(json.length / 10);
 							laypage.render({
@@ -878,6 +895,8 @@
 									}
 								}
 							});
+							//这里要获取所有的数据进行排序之后再按分页去取
+							arrSort(jsonRight);
 							writeRightList(getJsonPage(0, 10, jsonRight)); 
 							countRight = Math.ceil(jsonRight.length / 10);
 							laypage.render({
@@ -895,10 +914,13 @@
 						//右侧到左测 全部
 						$("#main—box .middle ul li.rtlfAll").on("click", function() {
 							//获取右侧选中的tr的集合
+							
 							var html = $("#main—box .right .list table tr").not(".header");
+							console.log(html);
 							for(var i = 0; i < html.length; i++) {
 								//添加左侧数据
 								var one =getOne($(html[i]).attr("id"),jsonRight); 
+								console.log(one);
 								addArr($(html[i]).attr("id"),json,one);
 								//删除右侧数据
 								delArr($(html[i]).attr("id"),jsonRight);
@@ -908,6 +930,8 @@
 							console.log(jsonRight);
 							//操作完初始左右数据
 							var laypage = layui.laypage;
+							//这里要获取所有的数据进行排序之后再按分页去取
+							arrSort(json);
 							writeLeftList(getJsonPage(0, 10, json)); 
 							countLeft = Math.ceil(json.length / 10);
 							laypage.render({
@@ -921,6 +945,8 @@
 									}
 								}
 							});
+							//这里要获取所有的数据进行排序之后再按分页去取
+							arrSort(jsonRight);
 							writeRightList(getJsonPage(0, 10, jsonRight)); 
 							countRight = Math.ceil(jsonRight.length / 10);
 							laypage.render({
