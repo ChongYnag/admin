@@ -234,7 +234,9 @@
 								</td>
 								<td>2018-02-01</td>
 								<td>2018-12-08</td>
-								<td class="link"><font color="#0182e5">1</font></td>
+								<td class="link">
+									<font color="#0182e5">1</font>
+								</td>
 								<td>XX机构</td>
 								<td>评审</td>
 								<td>网络</td>
@@ -255,7 +257,9 @@
 								</td>
 								<td>2018-02-01</td>
 								<td>2018-12-08</td>
-								<td class="link"><font color="#0182e5">1</font></td>
+								<td class="link">
+									<font color="#0182e5">1</font>
+								</td>
 								<td>XX机构</td>
 								<td>评审</td>
 								<td>网络</td>
@@ -276,7 +280,9 @@
 								</td>
 								<td>2018-02-01</td>
 								<td>2018-12-08</td>
-								<td class="link"><font color="#0182e5">1</font></td>
+								<td class="link">
+									<font color="#0182e5">1</font>
+								</td>
 								<td>XX机构</td>
 								<td>评审</td>
 								<td>网络</td>
@@ -297,7 +303,9 @@
 								</td>
 								<td>2018-02-01</td>
 								<td>2018-12-08</td>
-								<td class="link"><font color="#0182e5">1</font></td>
+								<td class="link">
+									<font color="#0182e5">1</font>
+								</td>
 								<td>XX机构</td>
 								<td>评审</td>
 								<td>网络</td>
@@ -318,7 +326,9 @@
 								</td>
 								<td>2018-02-01</td>
 								<td>2018-12-08</td>
-								<td class="link"><font color="#0182e5">1</font></td>
+								<td class="link">
+									<font color="#0182e5">1</font>
+								</td>
 								<td>XX机构</td>
 								<td>评审</td>
 								<td>网络</td>
@@ -435,10 +445,10 @@
 								<span>创建日期</span>
 								<input type="text" name="" id="" value="2018-08-03" />
 							</li>
-							<li class="check-box">
+							<!--<li class="check-box">
 								<input type="checkbox" /> 是否创建评审分组
-							</li>
-							<li class="num">
+							</li>-->
+							<li style="margin-left: 13px;" class="num">
 								<span>评审分租数</span>
 								<div class="select">
 									<select>
@@ -467,30 +477,30 @@
 							<li>
 								<span>选择授权人处室</span>
 								<div class="select">
-									<select>
-										<option>选择授权人处室</option>
-										<option>选择授权人处室</option>
-										<option>选择授权人处室</option>
+									<select class="room">
+										<option>处室一</option>
+										<option>处室二</option>
+										<option>处室三</option>
 									</select>
 								</div>
 							</li>
 							<li>
 								<span>评审分组</span>
 								<div class="select">
-									<select>
+									<select class="groups">
 										<option>评审一组</option>
-										<option>评审分组</option>
-										<option>评审分组</option>
+										<option>评审二组</option>
+										<option>评审三组</option>
 									</select>
 								</div>
 							</li>
 							<li>
 								<span>选择授权人姓名</span>
 								<div class="select">
-									<select>
-										<option>评审</option>
-										<option>评审</option>
-										<option>评审</option>
+									<select class="name">
+										<option>高峰</option>
+										<option>张三</option>
+										<option>李四</option>
 									</select>
 								</div>
 							</li>
@@ -504,27 +514,25 @@
 							</p>
 							<table class="projectlist" border="1">
 								<tbody>
-									<tr>
+									<tr class="head">
 										<th>序号 </th>
 										<th>评审分组</th>
 										<th>负责人</th>
 										<th>处室</th>
-										<th>状态</th>
+										<!--<th>状态</th>-->
+									</tr>
+									<!--<tr>
+										<td>1</td>
+										<td>评审一组</td>
+										<td>高峰</td>
+										<td>处室一</td>
 									</tr>
 									<tr>
 										<td>1</td>
 										<td>评审一组</td>
 										<td>高峰</td>
 										<td>处室一</td>
-										<td><em class="yes">已确认</em></td>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>评审一组</td>
-										<td>高峰</td>
-										<td>处室一</td>
-										<td><em class="not">未确认</em></td>
-									</tr>
+									</tr>-->
 								</tbody>
 							</table>
 						</div>
@@ -544,7 +552,7 @@
 							开始日期：<span>2018-01-01</span> 结束日期：<span>2018-01-01</span> 任务类型：<span>评审</span>
 						</p>
 						<p class="list">
-							评审形式：<span>网络</span> 组织单位：<span>单位一</span> 
+							评审形式：<span>网络</span> 组织单位：<span>单位一</span>
 						</p>
 						<ul>
 							<li>
@@ -651,7 +659,7 @@
 							开始日期：<span>2018-01-01</span> 结束日期：<span>2018-01-01</span> 任务类型：<span>评审</span>
 						</p>
 						<p class="list">
-							评审形式：<span>网络</span> 组织单位：<span>单位一</span> 
+							评审形式：<span>网络</span> 组织单位：<span>单位一</span>
 						</p>
 						<div class="hr">
 							<p>
@@ -699,7 +707,84 @@
 					var renwujump;
 					var Daochu;
 					var renwufenzujump;
+
+					/* 任务分组授权 ====== 添加功能 ====== */
+					//表格初始化数据，为空，保存之后可以获取数据数据 给其复制，列表自动填充初始化数据
+					var arr = [];
+					//渲染任务分组授权表格数据方法
+					function getArrList(arr) {
+						//先排序
+						arrSort(arr)
+						$("#fenzujump table tr").not(".head").remove();
+						var str = "",
+							num = 1;
+
+						for(var i = 0; i < arr.length; i++) {
+							str += "<tr>" +
+								"<td>" + num + "</td>" +
+								"<td>" + arr[i].groups + "</td>" +
+								"<td>" + arr[i].name + "</td>" +
+								"<td>" + arr[i].room + "</td>" +
+								"</tr>";
+							num++
+						}
+						$("#fenzujump table tr.head").after(str);
+					}
+					//排序
+					function arrSort(arr) {
+						//将数据按项目编号排序
+						for(var a = 0; a < arr.length-1; a++) {
+							for(var b = 0; b < arr.length - a - 1; b++) {
+								if(SimplifiedChinese_To_Arabia(arr[b].groups.substr(-2, 1)) > SimplifiedChinese_To_Arabia(arr[b + 1].groups.substr(-2, 1))) {
+									var swap = arr[b];
+									arr[b] = arr[b + 1];
+									arr[b + 1] = swap;
+								}
+							}
+						}
+						return arr;
+					}
+					//大小数组转阿拉伯数子比较大小
+					function SimplifiedChinese_To_Arabia(str){
+						var num;
+						switch(str){
+							case "一":num=1;break;
+							case "二":num=2;break;
+							case "三":num=3;break;
+						}
+						return num;
+					}
 					$(function() {
+						/* 任务分组授权 ====== 添加功能 ====== */
+						//初始化 任务分组授权里面的表格数据
+						getArrList(arr);
+						//添加
+						$("#fenzujump ul li.a span").on("click", function() {
+							//获取要添加的分组值
+							var groups = $("#fenzujump > div div.select select.groups").val();
+							console.log(groups);
+							//获取要添加负责人值
+							var name = $("#fenzujump > div div.select select.name").val();
+							console.log(name);
+							//获取授权人处室的值
+							var room = $("#fenzujump > div div.select select.room").val();
+							//往数组里面添加数据
+							var jsonOne = {
+								"groups": groups,
+								"name": name,
+								"room": room
+							};
+							//判断数组里面是否已经有评审分组
+							for(var i = 0; i < arr.length; i++) {
+								if(groups == arr[i].groups) {
+									arr.splice(i,1);
+								}
+							}
+							arr.push(jsonOne);
+							//更新表格数据
+							getArrList(arr);
+						})
+
 						//新建评审弹窗
 						$("#addps").on("click", function() {
 							Newps = layer.open({
